@@ -1344,34 +1344,384 @@ footer{
       <div class="section-pill">📊 Resultados reais</div>
       <h2 class="section-h2">Cases que <em>convertem.</em></h2>
     </div>
-    <div class="cases-grid">
-      <div class="ios-card case-card fade-up">
-        <div class="case-top brown"><div class="case-metric">600K+</div><div class="case-metric-label">Views · Instagram</div></div>
-        <div class="case-body"><div class="case-brand">Menegotti</div><div class="case-title">UGC que virou editorial</div><div class="case-desc">Viralizou e gerou cobertura no Portal de Schroeder — além das redes.</div></div>
+
+    <div class="case-carousel-wrap fade-up">
+      <div class="case-carousel" id="caseCarousel">
+        <!-- Card 1: Menegotti -->
+        <div class="case-slide" data-index="0">
+          <div class="case-slide-inner">
+            <video class="case-video" muted loop playsinline preload="metadata" src="videos/menegotti.mp4"></video>
+            <div class="case-overlay"></div>
+            <button class="case-mute-btn" aria-label="Ativar som">🔇</button>
+            <button class="case-report-badge" aria-label="Ver matéria completa">📰 Ver matéria</button>
+            <div class="case-textbox">
+              <div class="case-metric-big">600K+ views</div>
+              <div class="case-metric-small">Virou entrevista no Portal de Schroeder</div>
+              <div class="case-brand-tag">Menegotti</div>
+            </div>
+          </div>
+        </div>
+        <!-- Card 2: TikTok Shop -->
+        <div class="case-slide" data-index="1">
+          <div class="case-slide-inner">
+            <video class="case-video" muted loop playsinline preload="metadata" src="videos/tiktok.mp4"></video>
+            <div class="case-overlay"></div>
+            <button class="case-mute-btn" aria-label="Ativar som">🔇</button>
+            <div class="case-textbox">
+              <div class="case-metric-big">R$50K faturados</div>
+              <div class="case-metric-small">+1.500 unidades vendidas · 1,9M views</div>
+              <div class="case-brand-tag">TikTok Shop</div>
+            </div>
+          </div>
+        </div>
+        <!-- Card 3: OLX -->
+        <div class="case-slide" data-index="2">
+          <div class="case-slide-inner">
+            <video class="case-video" muted loop playsinline preload="metadata" src="videos/olx.mp4"></video>
+            <div class="case-overlay"></div>
+            <button class="case-mute-btn" aria-label="Ativar som">🔇</button>
+            <div class="case-textbox">
+              <div class="case-metric-big">Alcance massivo</div>
+              <div class="case-metric-small">Autenticidade em campanha nacional no Instagram</div>
+              <div class="case-brand-tag">OLX</div>
+            </div>
+          </div>
+        </div>
+        <!-- Card 4: Coala -->
+        <div class="case-slide" data-index="3">
+          <div class="case-slide-inner">
+            <video class="case-video" muted loop playsinline preload="metadata" src="videos/coala.mp4"></video>
+            <div class="case-overlay"></div>
+            <button class="case-mute-btn" aria-label="Ativar som">🔇</button>
+            <div class="case-textbox">
+              <div class="case-metric-big">Top em leads</div>
+              <div class="case-metric-small">Página oficial da marca</div>
+              <div class="case-brand-tag">Coala</div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="ios-card case-card fade-up">
-        <div class="case-top blue"><div class="case-metric">+50K</div><div class="case-metric-label">Em vendas · TikTok Shop</div></div>
-        <div class="case-body"><div class="case-brand">TikTok Shop</div><div class="case-title">1.500 unidades do mesmo produto</div><div class="case-desc">Live commerce com conversão direta.</div></div>
-      </div>
-      <div class="ios-card case-card fade-up">
-        <div class="case-top amber"><div class="case-metric">Top</div><div class="case-metric-label">Campanha Nacional</div></div>
-        <div class="case-body"><div class="case-brand">OLX</div><div class="case-title">Alcance massivo com autenticidade</div><div class="case-desc">Engajamento orgânico em campanha nacional.</div></div>
-      </div>
-      <div class="ios-card case-card fade-up">
-        <div class="case-top brown"><div class="case-metric">Top</div><div class="case-metric-label">Brand Page</div></div>
-        <div class="case-body"><div class="case-brand">Coala</div><div class="case-title">UGC na página oficial da marca</div><div class="case-desc">Impacto mensurável em engajamento e conversão.</div></div>
-      </div>
-      <div class="ios-card case-card fade-up">
-        <div class="case-top blue"><div class="case-metric">250+</div><div class="case-metric-label">Vídeos entregues</div></div>
-        <div class="case-body"><div class="case-brand">Portfólio 2026</div><div class="case-title">100+ marcas em 1,5 ano</div><div class="case-desc">Volume e qualidade consistentes em todos os nichos.</div></div>
-      </div>
-      <div class="ios-card case-card fade-up">
-        <div class="case-top amber"><div class="case-metric">Nível 3</div><div class="case-metric-label">TikTok Shop · SP</div></div>
-        <div class="case-body"><div class="case-brand">TikTok</div><div class="case-title">Top Creator certificada</div><div class="case-desc">Poucos creators chegam ao nível 3.</div></div>
-      </div>
+
+      <button class="case-nav case-nav-prev" id="casePrev" aria-label="Anterior">‹</button>
+      <button class="case-nav case-nav-next" id="caseNext" aria-label="Próximo">›</button>
+
+      <div class="case-dots" id="caseDots"></div>
+    </div>
+  </div>
+
+  <!-- Lightbox da reportagem -->
+  <div class="report-lightbox" id="reportLightbox">
+    <div class="report-lightbox-backdrop"></div>
+    <div class="report-lightbox-content">
+      <button class="report-lightbox-close" aria-label="Fechar">✕</button>
+      <img src="images/reportagem-menegotti.jpg" alt="Reportagem sobre a Menegotti no Portal de Schroeder">
     </div>
   </div>
 </section>
+
+<style>
+/* ===== CASE CAROUSEL (3D stacked) ===== */
+.case-carousel-wrap{
+  position:relative;
+  width:100%;
+  max-width:1100px;
+  margin:0 auto;
+  padding:3rem 0;
+}
+.case-carousel{
+  position:relative;
+  height:560px;
+  perspective:1400px;
+  perspective-origin:50% 50%;
+}
+.case-slide{
+  position:absolute;
+  top:0;left:50%;
+  width:280px;height:520px;
+  margin-left:-140px;
+  transition:transform 500ms cubic-bezier(0.22,1,0.36,1), opacity 500ms ease, filter 500ms ease;
+  cursor:pointer;
+}
+.case-slide-inner{
+  position:relative;
+  width:100%;height:100%;
+  border-radius:24px;
+  overflow:hidden;
+  box-shadow:0 20px 50px rgba(0,0,0,0.35);
+  background:#111;
+}
+.case-video{
+  position:absolute;inset:0;
+  width:100%;height:100%;
+  object-fit:cover;
+}
+.case-overlay{
+  position:absolute;inset:0;
+  background:linear-gradient(180deg, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.05) 40%, rgba(0,0,0,0.75) 100%);
+}
+.case-mute-btn{
+  position:absolute;top:14px;right:14px;
+  width:38px;height:38px;
+  border-radius:50%;
+  background:rgba(0,0,0,0.45);
+  backdrop-filter:blur(8px);
+  border:1px solid rgba(255,255,255,0.25);
+  color:white;
+  font-size:1rem;
+  display:flex;align-items:center;justify-content:center;
+  cursor:pointer;
+  z-index:3;
+  animation:mute-pulse 2.2s ease-in-out infinite;
+}
+@keyframes mute-pulse{
+  0%,100%{box-shadow:0 0 0 0 rgba(255,255,255,0.25);}
+  50%{box-shadow:0 0 0 8px rgba(255,255,255,0);}
+}
+.case-report-badge{
+  position:absolute;top:14px;left:14px;
+  padding:0.4rem 0.7rem;
+  border-radius:100px;
+  background:rgba(255,255,255,0.92);
+  border:none;
+  font-size:0.7rem;
+  font-weight:700;
+  color:var(--brown);
+  cursor:pointer;
+  z-index:3;
+  box-shadow:0 4px 12px rgba(0,0,0,0.2);
+}
+.case-textbox{
+  position:absolute;bottom:0;left:0;right:0;
+  padding:1.5rem 1.25rem;
+  z-index:2;
+  color:white;
+}
+.case-metric-big{
+  font-size:1.6rem;
+  font-weight:800;
+  letter-spacing:-0.02em;
+  line-height:1.1;
+  margin-bottom:0.35rem;
+}
+.case-metric-small{
+  font-size:0.8rem;
+  font-weight:500;
+  opacity:0.85;
+  line-height:1.3;
+  margin-bottom:0.6rem;
+}
+.case-brand-tag{
+  display:inline-block;
+  font-size:0.65rem;
+  font-weight:700;
+  letter-spacing:0.08em;
+  text-transform:uppercase;
+  padding:0.25rem 0.6rem;
+  border-radius:100px;
+  background:rgba(255,255,255,0.18);
+  backdrop-filter:blur(6px);
+}
+
+/* Posicionamento 3D dos slides pelo data-offset (definido via JS) */
+.case-slide[data-offset="0"]{
+  transform:translateX(0) translateZ(0) rotateY(0deg) scale(1);
+  z-index:5;
+  opacity:1;
+  filter:none;
+}
+.case-slide[data-offset="-1"]{
+  transform:translateX(-190px) translateZ(-160px) rotateY(28deg) scale(0.82);
+  z-index:4;
+  opacity:0.9;
+  filter:brightness(0.7);
+}
+.case-slide[data-offset="1"]{
+  transform:translateX(190px) translateZ(-160px) rotateY(-28deg) scale(0.82);
+  z-index:4;
+  opacity:0.9;
+  filter:brightness(0.7);
+}
+.case-slide[data-offset="-2"]{
+  transform:translateX(-320px) translateZ(-320px) rotateY(35deg) scale(0.68);
+  z-index:3;
+  opacity:0.55;
+  filter:brightness(0.5);
+}
+.case-slide[data-offset="2"]{
+  transform:translateX(320px) translateZ(-320px) rotateY(-35deg) scale(0.68);
+  z-index:3;
+  opacity:0.55;
+  filter:brightness(0.5);
+}
+.case-slide[data-offset="hidden"]{
+  opacity:0;
+  pointer-events:none;
+  transform:translateX(0) translateZ(-500px) scale(0.5);
+}
+
+.case-nav{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  width:48px;height:48px;
+  border-radius:50%;
+  background:var(--glass-strong);
+  backdrop-filter:var(--blur);
+  border:1px solid rgba(255,255,255,0.7);
+  box-shadow:var(--shadow-md);
+  font-size:1.5rem;
+  color:var(--brown);
+  cursor:pointer;
+  z-index:10;
+  display:flex;align-items:center;justify-content:center;
+  transition:transform 150ms ease;
+}
+.case-nav:hover{transform:translateY(-50%) scale(1.08);}
+.case-nav-prev{left:0;}
+.case-nav-next{right:0;}
+
+.case-dots{
+  display:flex;
+  justify-content:center;
+  gap:0.5rem;
+  margin-top:1.5rem;
+}
+.case-dot{
+  width:8px;height:8px;
+  border-radius:50%;
+  background:var(--gray-300);
+  cursor:pointer;
+  transition:background 200ms ease, transform 200ms ease;
+}
+.case-dot.active{
+  background:var(--brown);
+  transform:scale(1.3);
+}
+
+/* Lightbox */
+.report-lightbox{
+  display:none;
+  position:fixed;inset:0;
+  z-index:9999;
+  align-items:center;justify-content:center;
+}
+.report-lightbox.open{display:flex;}
+.report-lightbox-backdrop{
+  position:absolute;inset:0;
+  background:rgba(0,0,0,0.8);
+  backdrop-filter:blur(4px);
+}
+.report-lightbox-content{
+  position:relative;
+  max-width:90vw;max-height:90vh;
+  z-index:1;
+}
+.report-lightbox-content img{
+  max-width:100%;max-height:90vh;
+  border-radius:16px;
+  box-shadow:0 20px 60px rgba(0,0,0,0.5);
+}
+.report-lightbox-close{
+  position:absolute;top:-40px;right:0;
+  width:36px;height:36px;
+  border-radius:50%;
+  background:white;
+  border:none;
+  font-size:1.1rem;
+  cursor:pointer;
+}
+
+@media (max-width:768px){
+  .case-carousel{height:480px;}
+  .case-slide{width:220px;height:440px;margin-left:-110px;}
+  .case-slide[data-offset="-1"]{transform:translateX(-130px) translateZ(-140px) rotateY(28deg) scale(0.8);}
+  .case-slide[data-offset="1"]{transform:translateX(130px) translateZ(-140px) rotateY(-28deg) scale(0.8);}
+  .case-slide[data-offset="-2"],.case-slide[data-offset="2"]{opacity:0;pointer-events:none;}
+  .case-nav{width:40px;height:40px;font-size:1.25rem;}
+}
+</style>
+
+<script>
+(function(){
+  const slides = Array.from(document.querySelectorAll('.case-slide'));
+  const total = slides.length;
+  let current = 0;
+
+  const dotsWrap = document.getElementById('caseDots');
+  slides.forEach((_, i) => {
+    const dot = document.createElement('div');
+    dot.className = 'case-dot' + (i === 0 ? ' active' : '');
+    dot.addEventListener('click', () => goTo(i));
+    dotsWrap.appendChild(dot);
+  });
+  const dots = Array.from(dotsWrap.children);
+
+  function render(){
+    slides.forEach((slide, i) => {
+      let offset = i - current;
+      if (offset > total / 2) offset -= total;
+      if (offset < -total / 2) offset += total;
+
+      if (Math.abs(offset) > 2) {
+        slide.setAttribute('data-offset', 'hidden');
+      } else {
+        slide.setAttribute('data-offset', String(offset));
+      }
+
+      const video = slide.querySelector('.case-video');
+      if (offset === 0) {
+        video.play().catch(()=>{});
+      } else {
+        video.pause();
+      }
+    });
+    dots.forEach((d, i) => d.classList.toggle('active', i === current));
+  }
+
+  function goTo(index){
+    current = ((index % total) + total) % total;
+    render();
+  }
+
+  document.getElementById('casePrev').addEventListener('click', () => goTo(current - 1));
+  document.getElementById('caseNext').addEventListener('click', () => goTo(current + 1));
+
+  slides.forEach((slide) => {
+    slide.addEventListener('click', () => {
+      const offset = slide.getAttribute('data-offset');
+      if (offset === '-1' || offset === '-2') goTo(current - 1);
+      if (offset === '1' || offset === '2') goTo(current + 1);
+    });
+  });
+
+  // Botão de mute individual por card
+  document.querySelectorAll('.case-mute-btn').forEach((btn) => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const video = btn.closest('.case-slide-inner').querySelector('.case-video');
+      video.muted = !video.muted;
+      btn.textContent = video.muted ? '🔇' : '🔊';
+    });
+  });
+
+  // Badge da reportagem (lightbox)
+  const lightbox = document.getElementById('reportLightbox');
+  document.querySelectorAll('.case-report-badge').forEach((btn) => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      lightbox.classList.add('open');
+    });
+  });
+  lightbox.querySelector('.report-lightbox-close').addEventListener('click', () => {
+    lightbox.classList.remove('open');
+  });
+  lightbox.querySelector('.report-lightbox-backdrop').addEventListener('click', () => {
+    lightbox.classList.remove('open');
+  });
+
+  render();
+})();
+</script>
 
 <!-- VÍDEOS -->
 <section id="videos">
