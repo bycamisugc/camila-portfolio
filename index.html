@@ -272,7 +272,7 @@ nav{
 @keyframes marquee{0%{transform:translateX(0);}100%{transform:translateX(-50%);}}
 
 /* ── SOBRE ── */
-#sobre{padding:5rem 3rem;position:relative;z-index:1;}
+#sobre{padding:2.5rem 3rem;position:relative;z-index:1;}
 .sobre-inner{
   max-width:1100px;margin:0 auto;
   display:grid;grid-template-columns:1fr 1fr;
@@ -843,7 +843,7 @@ nav{
 .sobre-cta:hover{background:var(--brown-mid);transform:translateY(-1px);}
 
 /* ── MARCAS ── */
-#marcas{padding:2.5rem 0;position:relative;z-index:1;}
+#marcas{padding:1.25rem 0;position:relative;z-index:1;}
 .marcas-card{
   max-width:1100px;margin:0 auto 1.5rem;padding:1.2rem 2rem;
   border-radius:var(--radius-lg);
@@ -867,8 +867,82 @@ nav{
 .logo-pill img{width:100%;height:100%;object-fit:contain;padding:8px;}
 
 /* ── CASES ── */
-#cases{padding:4rem 3rem;position:relative;z-index:1;}
+#cases{padding:2rem 3rem;position:relative;z-index:1;}
 .cases-inner{max-width:1100px;margin:0 auto;}
+
+/* Barra de busca estilo iPhone (referência: Safari/Spotlight) */
+.ios-searchbar{
+  display:flex;
+  align-items:center;
+  gap:0.6rem;
+  max-width:640px;
+  margin:0 auto 2.5rem auto;
+  padding:0.5rem 0.6rem;
+  background:rgba(255,255,255,0.55);
+  backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);
+  border:1px solid rgba(255,255,255,0.6);
+  border-radius:100px;
+  box-shadow:0 8px 32px rgba(0,0,0,0.10);
+}
+.ios-searchbar-toggle{
+  width:44px;height:28px;
+  border-radius:100px;
+  background:rgba(120,120,128,0.24);
+  display:flex;align-items:center;
+  padding:2px;
+  flex-shrink:0;
+}
+.ios-searchbar-dot{
+  width:24px;height:24px;
+  border-radius:50%;
+  background:white;
+  box-shadow:0 2px 4px rgba(0,0,0,0.2);
+  display:flex;align-items:center;justify-content:center;
+}
+.ios-searchbar-dot::after{
+  content:'';
+  width:0;height:0;
+  border-top:4px solid transparent;
+  border-bottom:4px solid transparent;
+  border-left:6px solid var(--gray-500);
+  margin-left:2px;
+}
+.ios-searchbar-field{
+  flex:1;
+  display:flex;
+  align-items:center;
+  gap:0.5rem;
+  background:rgba(120,120,128,0.16);
+  border-radius:100px;
+  padding:0.55rem 0.9rem;
+  min-width:0;
+}
+.ios-searchbar-icon{width:16px;height:16px;color:var(--gray-500);flex-shrink:0;}
+.ios-searchbar-mic{width:16px;height:16px;color:var(--gray-500);flex-shrink:0;margin-left:auto;}
+.ios-searchbar-text{
+  font-size:0.85rem;
+  font-weight:600;
+  color:var(--gray-700);
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+.ios-searchbar-btn{
+  width:32px;height:32px;
+  border-radius:50%;
+  background:rgba(120,120,128,0.16);
+  display:flex;align-items:center;justify-content:center;
+  font-size:1.1rem;
+  color:var(--gray-700);
+  flex-shrink:0;
+}
+@media (max-width:600px){
+  .ios-searchbar{max-width:92%;padding:0.4rem 0.5rem;}
+  .ios-searchbar-text{font-size:0.75rem;}
+  .ios-searchbar-toggle{width:38px;height:24px;}
+  .ios-searchbar-dot{width:20px;height:20px;}
+}
+
 .section-header-card{
   padding:1.5rem 2rem;margin-bottom:1.5rem;
 }
@@ -907,7 +981,7 @@ nav{
 .case-desc{font-size:0.74rem;color:var(--gray-500);line-height:1.55;}
 
 /* ── VÍDEOS ── */
-#videos{padding:4rem 3rem;position:relative;z-index:1;}
+#videos{padding:2rem 3rem;position:relative;z-index:1;}
 .videos-inner{max-width:1100px;margin:0 auto;}
 .video-tabs-card{padding:1.2rem 1.8rem;margin-bottom:1rem;}
 .video-tabs{display:flex;gap:0.5rem;flex-wrap:wrap;}
@@ -942,7 +1016,7 @@ nav{
 .video-meta{display:flex;justify-content:space-between;align-items:center;padding:0 0.1rem;}
 
 /* ── SERVIÇOS ── */
-#servicos{padding:4rem 3rem;position:relative;z-index:1;}
+#servicos{padding:2rem 3rem;position:relative;z-index:1;}
 .servicos-inner{max-width:1100px;margin:0 auto;}
 .servicos-intro-card{padding:1.5rem 2rem;margin-bottom:1.5rem;}
 .servicos-intro-card p{font-size:0.85rem;color:var(--gray-700);line-height:1.75;max-width:520px;margin-top:0.5rem;}
@@ -972,7 +1046,7 @@ nav{
 .sc-desc{font-size:0.78rem;color:var(--gray-500);line-height:1.65;position:relative;z-index:1;transition:color 0.3s;}
 
 /* ── FEEDBACKS ── */
-#feedbacks{padding:4rem 3rem;position:relative;z-index:1;}
+#feedbacks{padding:2rem 3rem;position:relative;z-index:1;}
 .feedbacks-inner{max-width:1100px;margin:0 auto;}
 .feedbacks-header-card{padding:1.5rem 2rem;margin-bottom:1.5rem;background:rgba(61,43,31,0.88);}
 .feedbacks-header-card .section-h2{color:white;}
@@ -994,7 +1068,7 @@ nav{
 .fb-hint{font-size:0.65rem;color:rgba(255,255,255,0.25);margin-top:1rem;font-style:italic;}
 
 /* ── CONTATO ── */
-#contato{padding:4rem 3rem 5rem;position:relative;z-index:1;}
+#contato{padding:2rem 3rem 2.5rem;position:relative;z-index:1;}
 .contato-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;align-items:start;}
 .contato-left-card{padding:2rem;}
 .contato-left-card p{font-size:0.85rem;line-height:1.8;color:var(--gray-700);margin:0.8rem 0 1.5rem;max-width:340px;}
@@ -1340,9 +1414,15 @@ footer{
 <!-- CASES -->
 <section id="cases">
   <div class="cases-inner">
-    <div class="ios-card section-header-card fade-up">
-      <div class="section-pill">📊 Resultados reais</div>
-      <h2 class="section-h2">Cases que <em>convertem.</em></h2>
+    <div class="ios-searchbar fade-up">
+      <div class="ios-searchbar-toggle"><span class="ios-searchbar-dot"></span></div>
+      <div class="ios-searchbar-field">
+        <svg class="ios-searchbar-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/><path d="M21 21L16.65 16.65" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <span class="ios-searchbar-text">Resultados reais · Cases de sucesso</span>
+        <svg class="ios-searchbar-mic" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 15a3 3 0 003-3V6a3 3 0 00-6 0v6a3 3 0 003 3z" stroke="currentColor" stroke-width="1.8"/><path d="M19 11a7 7 0 01-14 0M12 18v3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      </div>
+      <div class="ios-searchbar-btn">＋</div>
+      <div class="ios-searchbar-btn">↗</div>
     </div>
 
     <div class="case-carousel-wrap fade-up">
