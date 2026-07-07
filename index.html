@@ -316,12 +316,13 @@ nav{
 /* Foto — card iOS */
 .sobre-photo-card{
   border-radius:var(--radius-lg);overflow:hidden;
-  aspect-ratio:3/4;max-height:380px;
+  aspect-ratio:3/4;max-height:380px;max-width:285px;
   background:linear-gradient(135deg,#D4CCC4,#C8C0B8);
   box-shadow:var(--shadow-lg);
   position:relative;
+  margin:0 auto;
 }
-.sobre-photo-card img{width:100%;height:100%;object-fit:contain;display:block;}
+.sobre-photo-card img{width:100%;height:100%;object-fit:cover;object-position:top center;display:block;}
 .sobre-photo-placeholder{
   width:100%;height:100%;display:flex;align-items:center;justify-content:center;
   color:var(--gray-500);font-size:0.75rem;
