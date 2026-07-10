@@ -1607,19 +1607,21 @@ footer{
     </div>
 
     <div class="case-carousel-wrap fade-up">
-      <div class="case-carousel" id="caseCarousel">
         <!-- Card 1: Menegotti -->
         <div class="case-slide" data-index="0">
           <div class="case-slide-inner">
             <div class="case-video-col">
               <video class="case-video" muted loop playsinline preload="metadata" src="videos/menegotti.mp4"></video>
               <button class="case-mute-btn" aria-label="Ativar som">🔇</button>
-              <button class="case-report-badge" aria-label="Ver matéria completa">📰 Ver matéria</button>
             </div>
             <div class="case-text-col">
-              <div class="case-brand-tag">Menegotti</div>
+              <div class="case-brand-row">
+                <div class="case-brand-logo">M</div>
+                <div class="case-brand-tag">Menegotti</div>
+              </div>
               <div class="case-metric-big">600K+ views</div>
               <div class="case-metric-small">Virou entrevista no Portal de Schroeder</div>
+              <button class="case-report-badge" aria-label="Ver matéria completa">📰 Ver matéria</button>
             </div>
           </div>
         </div>
@@ -1631,7 +1633,9 @@ footer{
               <button class="case-mute-btn" aria-label="Ativar som">🔇</button>
             </div>
             <div class="case-text-col">
-              <div class="case-brand-tag">TikTok Shop</div>
+              <div class="case-brand-row">
+                <div class="case-brand-tag">TikTok Shop</div>
+              </div>
               <div class="case-metric-big">R$50K faturados</div>
               <div class="case-metric-small">+1.500 unidades vendidas · 1,9M views</div>
             </div>
@@ -1645,7 +1649,10 @@ footer{
               <button class="case-mute-btn" aria-label="Ativar som">🔇</button>
             </div>
             <div class="case-text-col">
-              <div class="case-brand-tag">OLX</div>
+              <div class="case-brand-row">
+                <div class="case-brand-logo">O</div>
+                <div class="case-brand-tag">OLX</div>
+              </div>
               <div class="case-metric-big">Alcance massivo</div>
               <div class="case-metric-small">Campanha nacional com humanização de feed no Instagram</div>
             </div>
@@ -1659,7 +1666,10 @@ footer{
               <button class="case-mute-btn" aria-label="Ativar som">🔇</button>
             </div>
             <div class="case-text-col">
-              <div class="case-brand-tag">Coala</div>
+              <div class="case-brand-row">
+                <div class="case-brand-logo">C</div>
+                <div class="case-brand-tag">Coala</div>
+              </div>
               <div class="case-metric-big">Top em leads</div>
               <div class="case-metric-small">Página oficial da marca</div>
             </div>
@@ -1726,15 +1736,16 @@ footer{
   position:relative;
   order:2;
   height:100%;
+  aspect-ratio:9/16;
   border-radius:18px;
   overflow:hidden;
   background:#1a1a1a;
+  justify-self:end;
 }
 .case-video{
   position:absolute;inset:0;
   width:100%;height:100%;
-  object-fit:contain;
-  background:#1a1a1a;
+  object-fit:cover;
 }
 .case-mute-btn{
   position:absolute;top:14px;right:14px;
@@ -1755,18 +1766,23 @@ footer{
   50%{box-shadow:0 0 0 8px rgba(255,255,255,0);}
 }
 .case-report-badge{
-  position:absolute;top:14px;left:14px;
-  padding:0.4rem 0.7rem;
+  display:inline-flex;
+  align-items:center;
+  gap:0.4rem;
+  padding:0.5rem 0.9rem;
   border-radius:100px;
-  background:rgba(255,255,255,0.92);
+  background:var(--brown);
   border:none;
-  font-size:0.68rem;
+  font-size:0.72rem;
   font-weight:700;
-  color:var(--brown);
+  color:white;
   cursor:pointer;
-  z-index:3;
-  box-shadow:0 4px 12px rgba(0,0,0,0.2);
+  margin-top:1rem;
+  width:fit-content;
+  box-shadow:0 4px 12px rgba(61,43,31,0.25);
+  transition:transform 150ms ease;
 }
+.case-report-badge:hover{transform:translateY(-2px);}
 .case-text-col{
   display:flex;
   flex-direction:column;
@@ -1774,6 +1790,24 @@ footer{
   padding:2.5rem 3rem;
   background:linear-gradient(135deg,var(--off-white),var(--white));
 }
+.case-brand-row{
+  display:flex;
+  align-items:center;
+  gap:0.6rem;
+  margin-bottom:1rem;
+}
+.case-brand-logo{
+  width:32px;height:32px;
+  border-radius:50%;
+  background:var(--brown);
+  color:white;
+  font-size:0.85rem;
+  font-weight:800;
+  display:flex;align-items:center;justify-content:center;
+  flex-shrink:0;
+  overflow:hidden;
+}
+.case-brand-logo img{width:100%;height:100%;object-fit:cover;}
 .case-brand-tag{
   display:inline-block;
   width:fit-content;
@@ -1785,14 +1819,17 @@ footer{
   border-radius:100px;
   background:var(--amber-light);
   color:var(--brown-mid);
-  margin-bottom:1rem;
+  margin-bottom:0;
 }
 .case-metric-big{
   font-size:2.6rem;
   font-weight:800;
   letter-spacing:-0.02em;
   line-height:1.05;
-  color:var(--brown);
+  background:linear-gradient(135deg,var(--brown),var(--amber));
+  -webkit-background-clip:text;
+  background-clip:text;
+  -webkit-text-fill-color:transparent;
   margin-bottom:0.8rem;
 }
 .case-metric-small{
