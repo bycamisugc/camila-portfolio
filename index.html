@@ -1250,26 +1250,6 @@ nav{
 
 
 /* ── FEEDBACKS ── */
-#feedbacks{padding:2rem 3rem;position:relative;z-index:1;}
-.feedbacks-inner{max-width:1100px;margin:0 auto;}
-.feedbacks-header-card{padding:1.5rem 2rem;margin-bottom:1.5rem;background:rgba(61,43,31,0.88);}
-.feedbacks-header-card .section-h2{color:white;}
-.feedbacks-header-card .section-pill{background:rgba(212,168,67,0.15);border-color:rgba(212,168,67,0.3);color:var(--amber);}
-.feedbacks-scroll{
-  display:flex;gap:1rem;overflow-x:auto;padding-bottom:0.5rem;
-  scroll-snap-type:x mandatory;scrollbar-width:none;
-}
-.feedbacks-scroll::-webkit-scrollbar{display:none;}
-.fb-card{min-width:270px;max-width:270px;flex-shrink:0;scroll-snap-align:start;}
-.fb-bubble{
-  padding:1.2rem 1.4rem;
-  border-radius:1.4rem 1.4rem 1.4rem 0.4rem;
-}
-.fb-stars{color:var(--amber);font-size:0.78rem;margin-bottom:0.5rem;}
-.fb-text{font-size:0.82rem;line-height:1.75;color:var(--brown);font-style:italic;margin-bottom:0.9rem;}
-.fb-author{font-size:0.7rem;font-weight:700;color:var(--brown);}
-.fb-role{font-size:0.62rem;color:var(--gray-500);}
-.fb-hint{font-size:0.65rem;color:rgba(255,255,255,0.25);margin-top:1rem;font-style:italic;}
 
 /* ── CONTATO ── */
 #contato{padding:2rem 3rem 2.5rem;position:relative;z-index:1;}
@@ -1339,7 +1319,7 @@ footer{
   nav{width:calc(100% - 2rem);}
   .hero-inner,.sobre-inner,.cases-grid,.servicos-grid,.contato-inner{grid-template-columns:1fr;}
   .hero-photo-wrap,.safari-bar{width:100%;}
-  #hero,#sobre,#cases,#videos,#servicos,#feedbacks,#contato{padding:3rem 1.5rem;}
+  #hero,#sobre,#cases,#videos,#servicos,#contato{padding:3rem 1.5rem;}
   .plane-sobre{font-size:32px;}
   @keyframes circularFlight-sobre{
     0%{transform:translate(0,0) rotate(0deg);}
@@ -1631,53 +1611,57 @@ footer{
         <!-- Card 1: Menegotti -->
         <div class="case-slide" data-index="0">
           <div class="case-slide-inner">
-            <video class="case-video" muted loop playsinline preload="metadata" src="videos/menegotti.mp4"></video>
-            <div class="case-overlay"></div>
-            <button class="case-mute-btn" aria-label="Ativar som">🔇</button>
-            <button class="case-report-badge" aria-label="Ver matéria completa">📰 Ver matéria</button>
-            <div class="case-textbox">
+            <div class="case-video-col">
+              <video class="case-video" muted loop playsinline preload="metadata" src="videos/menegotti.mp4"></video>
+              <button class="case-mute-btn" aria-label="Ativar som">🔇</button>
+              <button class="case-report-badge" aria-label="Ver matéria completa">📰 Ver matéria</button>
+            </div>
+            <div class="case-text-col">
+              <div class="case-brand-tag">Menegotti</div>
               <div class="case-metric-big">600K+ views</div>
               <div class="case-metric-small">Virou entrevista no Portal de Schroeder</div>
-              <div class="case-brand-tag">Menegotti</div>
             </div>
           </div>
         </div>
         <!-- Card 2: TikTok Shop -->
         <div class="case-slide" data-index="1">
           <div class="case-slide-inner">
-            <video class="case-video" muted loop playsinline preload="metadata" src="videos/tiktok.mp4"></video>
-            <div class="case-overlay"></div>
-            <button class="case-mute-btn" aria-label="Ativar som">🔇</button>
-            <div class="case-textbox">
+            <div class="case-video-col">
+              <video class="case-video" muted loop playsinline preload="metadata" src="videos/tiktok.mp4"></video>
+              <button class="case-mute-btn" aria-label="Ativar som">🔇</button>
+            </div>
+            <div class="case-text-col">
+              <div class="case-brand-tag">TikTok Shop</div>
               <div class="case-metric-big">R$50K faturados</div>
               <div class="case-metric-small">+1.500 unidades vendidas · 1,9M views</div>
-              <div class="case-brand-tag">TikTok Shop</div>
             </div>
           </div>
         </div>
         <!-- Card 3: OLX -->
         <div class="case-slide" data-index="2">
           <div class="case-slide-inner">
-            <video class="case-video" muted loop playsinline preload="metadata" src="videos/olx.mp4"></video>
-            <div class="case-overlay"></div>
-            <button class="case-mute-btn" aria-label="Ativar som">🔇</button>
-            <div class="case-textbox">
-              <div class="case-metric-big">Alcance massivo</div>
-              <div class="case-metric-small">Autenticidade em campanha nacional no Instagram</div>
+            <div class="case-video-col">
+              <video class="case-video" muted loop playsinline preload="metadata" src="videos/olx.mp4"></video>
+              <button class="case-mute-btn" aria-label="Ativar som">🔇</button>
+            </div>
+            <div class="case-text-col">
               <div class="case-brand-tag">OLX</div>
+              <div class="case-metric-big">Alcance massivo</div>
+              <div class="case-metric-small">Campanha nacional com humanização de feed no Instagram</div>
             </div>
           </div>
         </div>
         <!-- Card 4: Coala -->
         <div class="case-slide" data-index="3">
           <div class="case-slide-inner">
-            <video class="case-video" muted loop playsinline preload="metadata" src="videos/coala.mp4"></video>
-            <div class="case-overlay"></div>
-            <button class="case-mute-btn" aria-label="Ativar som">🔇</button>
-            <div class="case-textbox">
+            <div class="case-video-col">
+              <video class="case-video" muted loop playsinline preload="metadata" src="videos/coala.mp4"></video>
+              <button class="case-mute-btn" aria-label="Ativar som">🔇</button>
+            </div>
+            <div class="case-text-col">
+              <div class="case-brand-tag">Coala</div>
               <div class="case-metric-big">Top em leads</div>
               <div class="case-metric-small">Página oficial da marca</div>
-              <div class="case-brand-tag">Coala</div>
             </div>
           </div>
         </div>
@@ -1701,54 +1685,61 @@ footer{
 </section>
 
 <style>
-/* ===== CASE CAROUSEL (3D stacked) ===== */
+/* ===== CASE CAROUSEL (páginas com vídeo + texto lado a lado) ===== */
 .case-carousel-wrap{
   position:relative;
   width:100%;
-  max-width:1100px;
+  max-width:1000px;
   margin:0 auto;
   padding:1rem 0;
 }
 .case-carousel{
   position:relative;
-  height:380px;
-  perspective:1000px;
-  perspective-origin:50% 50%;
+  height:420px;
+  overflow:hidden;
+  border-radius:28px;
 }
 .case-slide{
   position:absolute;
-  top:0;left:50%;
-  width:182px;height:338px;
-  margin-left:-91px;
-  transition:transform 500ms cubic-bezier(0.22,1,0.36,1), opacity 500ms ease, filter 500ms ease;
-  cursor:pointer;
+  inset:0;
+  opacity:0;
+  pointer-events:none;
+  transition:opacity 450ms ease;
+}
+.case-slide.active{
+  opacity:1;
+  pointer-events:auto;
 }
 .case-slide-inner{
   position:relative;
   width:100%;height:100%;
-  border-radius:24px;
+  display:grid;
+  grid-template-columns:38% 62%;
+  background:var(--white);
+  border-radius:28px;
   overflow:hidden;
-  box-shadow:0 20px 50px rgba(0,0,0,0.35);
+  box-shadow:0 20px 50px rgba(61,43,31,0.18);
+}
+.case-video-col{
+  position:relative;
+  height:100%;
   background:#111;
+  overflow:hidden;
 }
 .case-video{
   position:absolute;inset:0;
   width:100%;height:100%;
   object-fit:cover;
 }
-.case-overlay{
-  position:absolute;inset:0;
-  background:linear-gradient(180deg, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.05) 40%, rgba(0,0,0,0.75) 100%);
-}
 .case-mute-btn{
-  position:absolute;top:8px;right:8px;
-  width:28px;height:28px;
+  position:absolute;top:14px;right:14px;
+  width:34px;height:34px;
   border-radius:50%;
   background:rgba(0,0,0,0.45);
   backdrop-filter:blur(8px);
   border:1px solid rgba(255,255,255,0.25);
   color:white;
-  font-size:0.75rem;
+  font-size:0.9rem;
   display:flex;align-items:center;justify-content:center;
   cursor:pointer;
   z-index:3;
@@ -1756,94 +1747,77 @@ footer{
 }
 @keyframes mute-pulse{
   0%,100%{box-shadow:0 0 0 0 rgba(255,255,255,0.25);}
-  50%{box-shadow:0 0 0 6px rgba(255,255,255,0);}
+  50%{box-shadow:0 0 0 8px rgba(255,255,255,0);}
 }
 .case-report-badge{
-  position:absolute;top:8px;left:8px;
-  padding:0.3rem 0.5rem;
+  position:absolute;top:14px;left:14px;
+  padding:0.4rem 0.7rem;
   border-radius:100px;
   background:rgba(255,255,255,0.92);
   border:none;
-  font-size:0.55rem;
+  font-size:0.68rem;
   font-weight:700;
   color:var(--brown);
   cursor:pointer;
   z-index:3;
   box-shadow:0 4px 12px rgba(0,0,0,0.2);
 }
-.case-textbox{
-  position:absolute;bottom:0;left:0;right:0;
-  padding:0.9rem 0.8rem;
-  z-index:2;
-  color:white;
-}
-.case-metric-big{
-  font-size:1.05rem;
-  font-weight:800;
-  letter-spacing:-0.02em;
-  line-height:1.15;
-  margin-bottom:0.25rem;
-}
-.case-metric-small{
-  font-size:0.62rem;
-  font-weight:500;
-  opacity:0.85;
-  line-height:1.25;
-  margin-bottom:0.4rem;
+.case-text-col{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  padding:2.5rem 3rem;
+  background:linear-gradient(135deg,var(--off-white),var(--white));
 }
 .case-brand-tag{
   display:inline-block;
-  font-size:0.55rem;
+  width:fit-content;
+  font-size:0.7rem;
   font-weight:700;
-  letter-spacing:0.06em;
+  letter-spacing:0.08em;
   text-transform:uppercase;
-  padding:0.2rem 0.5rem;
+  padding:0.3rem 0.7rem;
   border-radius:100px;
-  background:rgba(255,255,255,0.18);
-  backdrop-filter:blur(6px);
+  background:var(--amber-light);
+  color:var(--brown-mid);
+  margin-bottom:1rem;
 }
-
-/* Posicionamento 3D dos slides pelo data-offset (definido via JS) */
-.case-slide[data-offset="0"]{
-  transform:translateX(0) translateZ(0) rotateY(0deg) scale(1);
-  z-index:5;
-  opacity:1;
-  filter:none;
+.case-metric-big{
+  font-size:2.6rem;
+  font-weight:800;
+  letter-spacing:-0.02em;
+  line-height:1.05;
+  color:var(--brown);
+  margin-bottom:0.8rem;
 }
-.case-slide[data-offset="-1"]{
-  transform:translateX(-124px) translateZ(-104px) rotateY(28deg) scale(0.82);
-  z-index:4;
-  opacity:0.9;
-  filter:brightness(0.7);
-}
-.case-slide[data-offset="1"]{
-  transform:translateX(124px) translateZ(-104px) rotateY(-28deg) scale(0.82);
-  z-index:4;
-  opacity:0.9;
-  filter:brightness(0.7);
-}
-.case-slide[data-offset="-2"]{
-  transform:translateX(-208px) translateZ(-208px) rotateY(35deg) scale(0.68);
-  z-index:3;
-  opacity:0.55;
-  filter:brightness(0.5);
-}
-.case-slide[data-offset="2"]{
-  transform:translateX(208px) translateZ(-208px) rotateY(-35deg) scale(0.68);
-  z-index:3;
-  opacity:0.55;
-  filter:brightness(0.5);
-}
-.case-slide[data-offset="hidden"]{
-  opacity:0;
-  pointer-events:none;
-  transform:translateX(0) translateZ(-500px) scale(0.5);
+.case-metric-small{
+  font-size:1rem;
+  font-weight:500;
+  color:var(--gray-500);
+  line-height:1.5;
+  max-width:340px;
 }
 
 .case-nav{
   position:absolute;
   top:50%;
   transform:translateY(-50%);
+  width:44px;height:44px;
+  border-radius:50%;
+  background:var(--glass-strong);
+  backdrop-filter:var(--blur);
+  border:1px solid rgba(255,255,255,0.7);
+  box-shadow:var(--shadow-md);
+  font-size:1.4rem;
+  color:var(--brown);
+  cursor:pointer;
+  z-index:10;
+  display:flex;align-items:center;justify-content:center;
+  transition:transform 150ms ease;
+}
+.case-nav:hover{transform:translateY(-50%) scale(1.08);}
+.case-nav-prev{left:-22px;}
+.case-nav-next{right:-22px;}
   width:38px;height:38px;
   border-radius:50%;
   background:var(--glass-strong);
@@ -1913,12 +1887,17 @@ footer{
 }
 
 @media (max-width:768px){
-  .case-carousel{height:480px;}
-  .case-slide{width:220px;height:440px;margin-left:-110px;}
-  .case-slide[data-offset="-1"]{transform:translateX(-130px) translateZ(-140px) rotateY(28deg) scale(0.8);}
-  .case-slide[data-offset="1"]{transform:translateX(130px) translateZ(-140px) rotateY(-28deg) scale(0.8);}
-  .case-slide[data-offset="-2"],.case-slide[data-offset="2"]{opacity:0;pointer-events:none;}
-  .case-nav{width:40px;height:40px;font-size:1.25rem;}
+  .case-carousel{height:auto;border-radius:20px;}
+  .case-slide{position:relative;opacity:0;height:0;overflow:hidden;transition:none;}
+  .case-slide.active{opacity:1;height:auto;position:relative;}
+  .case-slide-inner{grid-template-columns:1fr;border-radius:20px;}
+  .case-video-col{aspect-ratio:16/10;}
+  .case-text-col{padding:1.5rem 1.5rem 2rem;}
+  .case-metric-big{font-size:1.8rem;}
+  .case-metric-small{font-size:0.85rem;max-width:100%;}
+  .case-nav{width:38px;height:38px;font-size:1.15rem;}
+  .case-nav-prev{left:8px;}
+  .case-nav-next{right:8px;}
 }
 </style>
 
@@ -1939,18 +1918,11 @@ footer{
 
   function render(){
     slides.forEach((slide, i) => {
-      let offset = i - current;
-      if (offset > total / 2) offset -= total;
-      if (offset < -total / 2) offset += total;
-
-      if (Math.abs(offset) > 2) {
-        slide.setAttribute('data-offset', 'hidden');
-      } else {
-        slide.setAttribute('data-offset', String(offset));
-      }
+      const isActive = i === current;
+      slide.classList.toggle('active', isActive);
 
       const video = slide.querySelector('.case-video');
-      if (offset === 0) {
+      if (isActive) {
         video.play().catch(()=>{});
       } else {
         video.pause();
@@ -1966,14 +1938,6 @@ footer{
 
   document.getElementById('casePrev').addEventListener('click', () => goTo(current - 1));
   document.getElementById('caseNext').addEventListener('click', () => goTo(current + 1));
-
-  slides.forEach((slide) => {
-    slide.addEventListener('click', () => {
-      const offset = slide.getAttribute('data-offset');
-      if (offset === '-1' || offset === '-2') goTo(current - 1);
-      if (offset === '1' || offset === '2') goTo(current + 1);
-    });
-  });
 
   // Botão de mute individual por card
   document.querySelectorAll('.case-mute-btn').forEach((btn) => {
@@ -2111,22 +2075,6 @@ footer{
 </section>
 
 <!-- FEEDBACKS -->
-<section id="feedbacks">
-  <div class="feedbacks-inner">
-    <div class="ios-card feedbacks-header-card fade-up">
-      <div class="section-pill">💬 O que dizem</div>
-      <h2 class="section-h2">Marcas que já trabalharam <em>comigo.</em></h2>
-    </div>
-    <div class="feedbacks-scroll">
-      <div class="fb-card"><div class="ios-card fb-bubble"><div class="fb-stars">★★★★★</div><p class="fb-text">"A Camis entregou um conteúdo incrível, super alinhada com o briefing. O resultado superou as expectativas."</p><div class="fb-author">Marina</div><div class="fb-role">Colaboradora e parceira</div></div></div>
-      <div class="fb-card"><div class="ios-card fb-bubble"><div class="fb-stars">★★★★★</div><p class="fb-text">"Profissional, criativa e entregou dentro do prazo. Experiência excelente — com certeza indicaria."</p><div class="fb-author">Marca Parceira</div><div class="fb-role">Campanha UGC</div></div></div>
-      <div class="fb-card"><div class="ios-card fb-bubble"><div class="fb-stars">★★★★★</div><p class="fb-text">"O vídeo que ela criou foi o que mais performou na campanha. A autenticidade é diferenciada."</p><div class="fb-author">Marca Parceira</div><div class="fb-role">Campanha de produto</div></div></div>
-      <div class="fb-card"><div class="ios-card fb-bubble"><div class="fb-stars">★★★★★</div><p class="fb-text">"Resultado acima do esperado. Fala com o consumidor de um jeito que não parece publicidade."</p><div class="fb-author">Marca Parceira</div><div class="fb-role">UGC para e-commerce</div></div></div>
-    </div>
-    <p class="fb-hint">Arraste para ler mais →</p>
-  </div>
-</section>
-
 <!-- CONTATO -->
 <section id="contato">
   <div class="contato-inner">
