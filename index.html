@@ -2467,7 +2467,7 @@ function buildVideoCard(v){
     <button class="video-play-btn" aria-label="Assistir vídeo">▶</button>
   `;
   card.addEventListener('click', function loadVideo(){
-    card.innerHTML = `<iframe src="https://www.youtube.com/embed/${v.youtubeId}?autoplay=1" frameborder="0" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen></iframe>`;
+    card.innerHTML = `<iframe src="https://www.youtube-nocookie.com/embed/${v.youtubeId}?autoplay=1&modestbranding=1&controls=0&rel=0&iv_load_policy=3&fs=0&disablekb=1&playsinline=1" frameborder="0" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen></iframe>`;
     card.removeEventListener('click', loadVideo);
   }, { once: true });
 
