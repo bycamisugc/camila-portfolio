@@ -1281,6 +1281,42 @@ nav{
   display:flex;align-items:center;justify-content:center;
   min-height:100px;
 }
+.marca-review-card{
+  flex-shrink:0;
+  scroll-snap-align:start;
+  width:280px;
+  min-height:180px;
+  border-radius:14px;
+  background:var(--white);
+  box-shadow:0 8px 20px rgba(61,43,31,0.12);
+  padding:1.2rem 1.3rem;
+  display:flex;
+  flex-direction:column;
+}
+.marca-review-stars{
+  color:#F2C15E;
+  font-size:0.95rem;
+  letter-spacing:0.1em;
+  margin-bottom:0.6rem;
+}
+.marca-review-score{
+  color:var(--brown);
+  font-weight:800;
+  font-size:1.1rem;
+  letter-spacing:0;
+  margin-left:0.3rem;
+}
+.marca-review-empresa{
+  font-size:0.88rem;
+  font-weight:700;
+  color:var(--brown);
+  margin-bottom:0.5rem;
+}
+.marca-review-text{
+  font-size:0.78rem;
+  color:var(--gray-500);
+  line-height:1.55;
+}
 
 @media (max-width:768px){
   .servicos-stack{flex-wrap:wrap;padding:1rem 0 2rem;}
@@ -2339,7 +2375,41 @@ footer{
     <div class="ios-card feedback-exposed-section fade-up">
       <div class="feedback-exposed-title">🤝 O que as marcas dizem</div>
       <div class="feedback-scroll-row" id="feedbackMarcasRow">
-        <div class="feedback-scroll-chip feedback-scroll-chip-placeholder">Em breve — depoimentos de marcas parceiras</div>
+        <div class="marca-review-card">
+          <div class="marca-review-stars">★★★★★ <span class="marca-review-score">5</span></div>
+          <div class="marca-review-empresa">CNA S.A.</div>
+          <div class="marca-review-text">Os vídeos da Camila foram muito bem feitos, dinâmicos e criativos! Nota 10</div>
+        </div>
+        <div class="marca-review-card">
+          <div class="marca-review-stars">★★★★★ <span class="marca-review-score">5</span></div>
+          <div class="marca-review-empresa">Indexnet Publicidade Digital</div>
+          <div class="marca-review-text">Camila foi comunicativa e entregou um ótimo trabalho! Conteúdo criativo e dinâmico, bem alinhado com a proposta da marca</div>
+        </div>
+        <div class="marca-review-card">
+          <div class="marca-review-stars">★★★★★ <span class="marca-review-score">5</span></div>
+          <div class="marca-review-empresa">Renova Pisos</div>
+          <div class="marca-review-text">Ótima entrega de conteudo, video espontaneo e bem produzido, se encaixou perfeitamente no que minha empresa buscava.</div>
+        </div>
+        <div class="marca-review-card">
+          <div class="marca-review-stars">★★★★★ <span class="marca-review-score">5</span></div>
+          <div class="marca-review-empresa">Pra Decorar</div>
+          <div class="marca-review-text">O vídeo da Camila ficou incrível, mostrou o nosso produto em ação. Um olhar impecável pra nossa marca. Trabalho excelente!</div>
+        </div>
+        <div class="marca-review-card">
+          <div class="marca-review-stars">★★★★★ <span class="marca-review-score">5</span></div>
+          <div class="marca-review-empresa">MS Empreendimentos Digitais</div>
+          <div class="marca-review-text">Amamos o trabalho da Camila, nos entregou o vídeo antes do prazo e foi super profissional. O conteúdo ficou muito melhor do que esperávamos, com certeza trabalharemos juntas mais vezes.</div>
+        </div>
+        <div class="marca-review-card">
+          <div class="marca-review-stars">★★★★★ <span class="marca-review-score">5</span></div>
+          <div class="marca-review-empresa">Grupo Menegotti</div>
+          <div class="marca-review-text">Trabalho impecável! Sabemos que os vídeos que combinamos não foram fáceis de produzir – exigiram muito trabalho, dedicação e atenção aos detalhes. E o resultado não poderia ter sido melhor! A Camila nos entregou tudo com qualidade, mostrando a eficiência e a robustez do nosso guincho. Parceria como essa faz toda a diferença. Obrigado pelo empenho!</div>
+        </div>
+        <div class="marca-review-card">
+          <div class="marca-review-stars">★★★★★ <span class="marca-review-score">5</span></div>
+          <div class="marca-review-empresa">Verbalize</div>
+          <div class="marca-review-text">A Camis é ótima! Entendeu perfeitamente qual era o conceito do conteúdo. Na verdade não só entendeu, como sugeriu ideias que iam de encontro com o que precisávamos para o Chácaras Limeira.</div>
+        </div>
       </div>
     </div>
     </div>
