@@ -34,7 +34,7 @@
   --radius-xl:40px;
 }
 
-html{scroll-behavior:smooth}
+html{scroll-behavior:smooth;overflow-x:hidden}
 body{
   font-family:'Inter',system-ui,-apple-system,sans-serif;
   color:var(--black);
@@ -984,7 +984,7 @@ nav{
 
 /* ── VÍDEOS ── */
 #videos{padding:2rem 3rem;position:relative;z-index:1;}
-.videos-inner{max-width:1300px;margin:0 auto;}
+.videos-inner{max-width:1280px;margin:0 auto;}
 .videos-header{margin-bottom:1.2rem;padding:1.6rem 2rem;}
 .videos-title-big{
   font-size:2.1rem;
@@ -1058,6 +1058,7 @@ nav{
   box-shadow:var(--shadow-sm);transition:transform 0.25s,box-shadow 0.25s;
   cursor:pointer;
 }
+.video-card.video-card-horizontal{aspect-ratio:16/9;}
 .video-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-md);}
 .video-card iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:none;}
 .video-thumb{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;}
@@ -2548,7 +2549,7 @@ const ALL_VIDEOS = [
   { file: 'videos/casa-on-moveis.mp4', thumb: 'images/thumb-casa-on-moveis.jpg', niche: 'casa', marca: 'On Móveis', estilo: 'UGC' },
   { file: 'videos/casa-aize.mp4', thumb: 'images/thumb-casa-aize.jpg', niche: 'casa', marca: 'Aize', estilo: 'UGC' },
 
-  { file: 'videos/youtube-perplexity.mp4', thumb: 'images/thumb-youtube-perplexity.jpg', niche: 'youtube', marca: 'Perplexity', estilo: 'UGC' },
+  { file: 'videos/youtube-perplexity.mp4', thumb: 'images/thumb-youtube-perplexity.jpg', niche: 'youtube', marca: 'Perplexity', estilo: 'UGC', horizontal: true },
 
   { file: 'videos/clips-roupao.mp4', thumb: 'images/thumb-clips-roupao.jpg', niche: 'clips', marca: 'Roupão', estilo: 'Clip' },
   { file: 'videos/clips-maio-marrakesh.mp4', thumb: 'images/thumb-clips-maio-marrakesh.jpg', niche: 'clips', marca: 'Maiô Marrakesh', estilo: 'Clip' },
@@ -2577,7 +2578,7 @@ function buildVideoCard(v){
   wrap.className = 'video-item';
 
   const card = document.createElement('div');
-  card.className = 'video-card';
+  card.className = 'video-card' + (v.horizontal ? ' video-card-horizontal' : '');
 
   if (v.file) {
     // Vídeo já migrado: arquivo hospedado, visual limpo, sem interface do YouTube
