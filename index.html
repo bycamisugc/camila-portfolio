@@ -984,8 +984,8 @@ nav{
 
 /* ── VÍDEOS ── */
 #videos{padding:2rem 3rem;position:relative;z-index:1;}
-.videos-inner{max-width:1100px;margin:0 auto;}
-.videos-header{margin-bottom:1.2rem;}
+.videos-inner{max-width:1300px;margin:0 auto;}
+.videos-header{margin-bottom:1.2rem;padding:1.6rem 2rem;}
 .videos-title-big{
   font-size:2.1rem;
   font-weight:800;
@@ -1018,7 +1018,7 @@ nav{
 }
 .niche-scroll-row .video-item{
   flex-shrink:0;
-  width:170px;
+  width:280px;
   scroll-snap-align:start;
 }
 .videos-empty-state{
@@ -1051,24 +1051,39 @@ nav{
 @media (max-width:520px){
   .videos-grid{grid-template-columns:1fr;}
 }
-.video-item{display:flex;flex-direction:column;gap:0.45rem;}
+.video-item{display:flex;flex-direction:column;}
 .video-card{
   border-radius:var(--radius-md);overflow:hidden;
   background:var(--brown);aspect-ratio:9/16;position:relative;
   box-shadow:var(--shadow-sm);transition:transform 0.25s,box-shadow 0.25s;
+  cursor:pointer;
 }
 .video-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-md);}
 .video-card iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:none;}
-.video-placeholder-card{
-  position:absolute;inset:0;display:flex;flex-direction:column;
-  align-items:center;justify-content:center;gap:0.4rem;
-  color:rgba(255,255,255,0.25);font-size:0.6rem;
-  text-transform:uppercase;letter-spacing:0.1em;
+.video-thumb{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;}
+.video-brand-overlay{
+  position:absolute;top:0;left:0;right:0;
+  padding:0.8rem 1rem;
+  background:linear-gradient(180deg,rgba(0,0,0,0.55) 0%,rgba(0,0,0,0) 100%);
+  color:white;
+  font-size:0.8rem;
+  font-weight:700;
 }
-.play-btn{width:36px;height:36px;border-radius:50%;border:1px solid rgba(255,255,255,0.2);display:flex;align-items:center;justify-content:center;font-size:0.85rem;}
-.vm-marca{font-size:0.62rem;font-weight:600;color:var(--brown);opacity:0.55;}
-.vm-estilo{font-size:0.56rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--amber);}
-.video-meta{display:flex;justify-content:space-between;align-items:center;padding:0 0.1rem;}
+.video-play-btn{
+  position:absolute;top:50%;left:50%;
+  transform:translate(-50%,-50%);
+  width:44px;height:44px;
+  border-radius:50%;
+  background:rgba(255,255,255,0.85);
+  border:none;
+  color:var(--brown);
+  font-size:0.8rem;
+  display:flex;align-items:center;justify-content:center;
+  cursor:pointer;
+  transition:transform 200ms ease,background 200ms ease;
+  padding-left:3px;
+}
+.video-card:hover .video-play-btn{transform:translate(-50%,-50%) scale(1.1);background:white;}
 
 /* ── SERVIÇOS ── */
 #servicos{padding:2rem 3rem;position:relative;z-index:1;overflow-x:hidden;}
@@ -2215,7 +2230,7 @@ footer{
 <!-- VÍDEOS -->
 <section id="videos">
   <div class="videos-inner">
-    <div class="videos-header fade-up">
+    <div class="ios-card videos-header fade-up">
       <div class="section-pill">🎬 Portfólio</div>
       <h2 class="videos-title-big">Veja o que eu já criei <em>separado por nichos</em></h2>
     </div>
@@ -2440,20 +2455,23 @@ const NICHE_LABELS = {
 };
 const NICHE_ORDER = ['casa','tech','limpeza','pet','moda','beleza','gastronomia','auto','ferramentas','youtube','clips'];
 
-function youtubeEmbed(youtubeId){
-  return `<iframe src="https://www.youtube.com/embed/${youtubeId}" frameborder="0" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen loading="lazy"></iframe>`;
-}
-
 function buildVideoCard(v){
   const wrap = document.createElement('div');
   wrap.className = 'video-item';
+
   const card = document.createElement('div');
   card.className = 'video-card';
-  card.innerHTML = youtubeEmbed(v.youtubeId);
-  const meta = document.createElement('div');
-  meta.className = 'video-meta';
-  meta.innerHTML = `<span class="vm-marca">${v.marca}</span><span class="vm-estilo">${v.estilo}</span>`;
-  wrap.appendChild(card);wrap.appendChild(meta);
+  card.innerHTML = `
+    <img class="video-thumb" src="https://img.youtube.com/vi/${v.youtubeId}/hqdefault.jpg" alt="${v.marca}" loading="lazy">
+    <div class="video-brand-overlay">${v.marca}</div>
+    <button class="video-play-btn" aria-label="Assistir vídeo">▶</button>
+  `;
+  card.addEventListener('click', function loadVideo(){
+    card.innerHTML = `<iframe src="https://www.youtube.com/embed/${v.youtubeId}?autoplay=1" frameborder="0" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen></iframe>`;
+    card.removeEventListener('click', loadVideo);
+  }, { once: true });
+
+  wrap.appendChild(card);
   return wrap;
 }
 
