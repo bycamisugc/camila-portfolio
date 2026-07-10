@@ -1024,14 +1024,18 @@ nav{
 /* Nota adesiva / lembrete (título da seção Serviços) */
 .sticky-note{
   position:relative;
-  max-width:480px;
+  max-width:900px;
   margin:0 auto 2.5rem auto;
-  padding:1.8rem 2rem 1.6rem;
+  padding:1.2rem 2.2rem;
   background:linear-gradient(135deg, #FDF6E3 0%, #F9EBC5 100%);
   border-radius:6px 6px 24px 6px;
   box-shadow:0 12px 28px rgba(61,43,31,0.18), 0 2px 6px rgba(61,43,31,0.1);
-  transform:rotate(-1.5deg);
+  transform:rotate(-1deg);
   transition:transform 300ms ease;
+  display:flex;
+  align-items:center;
+  gap:1.5rem;
+  flex-wrap:wrap;
 }
 .sticky-note:hover{transform:rotate(0deg) scale(1.01);}
 .sticky-note-pin{
@@ -1044,30 +1048,28 @@ nav{
   box-shadow:0 3px 6px rgba(0,0,0,0.3);
 }
 .sticky-note-tag{
-  display:inline-block;
-  font-size:0.7rem;
-  font-weight:700;
-  color:var(--brown-mid);
-  margin-bottom:0.5rem;
-  letter-spacing:0.02em;
+  display:none;
 }
 .sticky-note-title{
-  font-size:1.5rem;
+  font-size:1.35rem;
   font-weight:800;
   color:var(--brown);
-  line-height:1.25;
-  margin-bottom:0.6rem;
+  line-height:1.2;
+  white-space:nowrap;
+  flex-shrink:0;
 }
 .sticky-note-title em{color:var(--amber);font-style:normal;}
 .sticky-note-text{
-  font-size:0.85rem;
+  font-size:0.82rem;
   color:var(--brown-mid);
-  line-height:1.5;
+  line-height:1.4;
   opacity:0.85;
+  flex:1;
+  min-width:220px;
 }
-@media (max-width:600px){
-  .sticky-note{max-width:90%;padding:1.4rem 1.5rem;}
-  .sticky-note-title{font-size:1.25rem;}
+@media (max-width:768px){
+  .sticky-note{flex-direction:column;align-items:flex-start;gap:0.5rem;padding:1.4rem 1.5rem;}
+  .sticky-note-title{white-space:normal;font-size:1.25rem;}
 }
 
 
@@ -1147,18 +1149,38 @@ nav{
 .ssc-bar-amber{background:linear-gradient(90deg,var(--amber),#F2C15E);}
 .ssc-bar-brown{background:linear-gradient(90deg,var(--brown),var(--brown-mid));}
 
-.sc2-comments-toggle{
-  margin-top:0.7rem;
-  padding:0.4rem 0.7rem;
+.feedback-buttons-row{
+  display:flex;
+  gap:1rem;
+  justify-content:center;
+  flex-wrap:wrap;
+  margin-top:2rem;
+}
+.feedback-cta-btn{
+  flex:1;
+  min-width:260px;
+  max-width:420px;
+  padding:1rem 1.4rem;
+  border-radius:16px;
   background:var(--amber-light);
-  border-radius:100px;
-  font-size:0.65rem;
+  border:1px solid rgba(212,168,67,0.3);
+  font-size:0.85rem;
   font-weight:600;
   color:var(--brown-mid);
   text-align:center;
-  transition:background 200ms ease;
+  cursor:pointer;
+  transition:background 200ms ease, transform 150ms ease;
+  line-height:1.4;
 }
-.sc2-comments-toggle:hover{background:rgba(212,168,67,0.3);}
+.feedback-cta-btn:hover{background:rgba(212,168,67,0.3);transform:translateY(-2px);}
+.comment-chip-placeholder{
+  grid-column:1/-1;
+  text-align:center;
+  padding:3rem 1rem;
+  color:var(--gray-500);
+  font-size:0.9rem;
+  font-style:italic;
+}
 
 @media (max-width:768px){
   .servicos-stack{flex-wrap:wrap;padding:1rem 0 2rem;}
@@ -2038,7 +2060,7 @@ footer{
     <div class="sticky-note fade-up">
       <div class="sticky-note-pin"></div>
       <div class="sticky-note-tag">⚡ Como trabalhar comigo</div>
-      <h2 class="sticky-note-title">Escolha o formato.<br>Ou <em>mescle tudo.</em></h2>
+      <h2 class="sticky-note-title">Escolha o formato. Ou <em>mescle tudo.</em></h2>
       <p class="sticky-note-text">Não precisa escolher só um. Crio pacotes 100% personalizados — me conta o que você precisa e a gente monta juntas.</p>
     </div>
     <div class="servicos-stack">
@@ -2058,7 +2080,6 @@ footer{
           <div class="ssc-tag">Converse com minha comunidade</div>
           <div class="ssc-name">PUBLI</div>
           <div class="ssc-desc">Publi no meu perfil com meu alcance e audiência. Visibilidade com credibilidade real.</div>
-          <div class="sc2-comments-toggle">💬 Ver o que dizem sobre mim</div>
         </div>
         <div class="ssc-bar ssc-bar-brown"></div>
       </div>
@@ -2083,14 +2104,19 @@ footer{
         <div class="ssc-bar ssc-bar-brown"></div>
       </div>
     </div>
+
+    <div class="feedback-buttons-row">
+      <button class="feedback-cta-btn" id="btnFeedbackSeguidores">💬 Clique e descubra o que meus seguidores falam dos meus conteúdos</button>
+      <button class="feedback-cta-btn" id="btnFeedbackMarcas">🤝 Clique e descubra o que as marcas costumam dizer depois de trabalhar comigo</button>
+    </div>
     </div>
 
-    <!-- Collage de comentários (abre ao clicar no card de Publi) -->
-    <div class="comments-collage-overlay" id="commentsOverlay">
+    <!-- Collage de comentários dos SEGUIDORES (abre pelo botão "o que meus seguidores falam") -->
+    <div class="comments-collage-overlay" id="commentsOverlaySeguidores">
       <div class="comments-collage-backdrop"></div>
       <div class="comments-collage-panel">
-        <button class="comments-collage-close" id="commentsClose" aria-label="Fechar">✕</button>
-        <div class="comments-collage-title">O que dizem sobre mim 💜</div>
+        <button class="comments-collage-close" data-close-overlay="seguidores" aria-label="Fechar">✕</button>
+        <div class="comments-collage-title">O que meus seguidores dizem 💜</div>
         <div class="comments-collage-grid">
           <div class="comment-chip comment-chip-1">
             <img src="images/comment-1.jpg" alt="Comentário de seguidora">
@@ -2110,6 +2136,18 @@ footer{
           <div class="comment-chip comment-chip-6 comment-chip-dm">
             <div class="comment-dm-bubble">Acho ela muito desenrolada.. além de nunca saber oq é publi ou não dela. Acho ela sensacional! Kkkkk</div>
           </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Collage de comentários das MARCAS (abre pelo botão "o que as marcas dizem") -->
+    <div class="comments-collage-overlay" id="commentsOverlayMarcas">
+      <div class="comments-collage-backdrop"></div>
+      <div class="comments-collage-panel">
+        <button class="comments-collage-close" data-close-overlay="marcas" aria-label="Fechar">✕</button>
+        <div class="comments-collage-title">O que as marcas dizem 🤝</div>
+        <div class="comments-collage-grid">
+          <div class="comment-chip-placeholder">Em breve — depoimentos de marcas parceiras</div>
         </div>
       </div>
     </div>
@@ -2197,22 +2235,25 @@ document.querySelectorAll('.fade-up').forEach(el => obs.observe(el));
 filterVids(document.querySelector('.vtab'), 'todos');
 </script>
 
-<!-- Collage de comentários (card Publi) -->
+<!-- Collage de comentários (seguidores e marcas) -->
 <script>
 (function(){
-  const toggle = document.querySelector('.sc2-comments-toggle');
-  const overlay = document.getElementById('commentsOverlay');
-  const closeBtn = document.getElementById('commentsClose');
-  if (!toggle || !overlay) return;
+  function setupOverlay(btnId, overlayId){
+    const btn = document.getElementById(btnId);
+    const overlay = document.getElementById(overlayId);
+    if (!btn || !overlay) return;
 
-  toggle.addEventListener('click', (e) => {
-    e.stopPropagation();
-    overlay.classList.add('open');
-  });
-  closeBtn.addEventListener('click', () => overlay.classList.remove('open'));
-  overlay.querySelector('.comments-collage-backdrop').addEventListener('click', () => {
-    overlay.classList.remove('open');
-  });
+    btn.addEventListener('click', () => overlay.classList.add('open'));
+    overlay.querySelector('.comments-collage-close').addEventListener('click', () => {
+      overlay.classList.remove('open');
+    });
+    overlay.querySelector('.comments-collage-backdrop').addEventListener('click', () => {
+      overlay.classList.remove('open');
+    });
+  }
+
+  setupOverlay('btnFeedbackSeguidores', 'commentsOverlaySeguidores');
+  setupOverlay('btnFeedbackMarcas', 'commentsOverlayMarcas');
 })();
 </script>
 
