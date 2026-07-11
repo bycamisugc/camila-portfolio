@@ -2911,7 +2911,22 @@ document.addEventListener('DOMContentLoaded', function() {
     }).catch(function(){});
 
     form.querySelectorAll('input,select,textarea,button').forEach(function(el){ el.disabled = true; });
-    document.getElementById('contatoFormNote').textContent = '✅ Recebido! Respondo em até 12 horas.';
+    form.style.opacity = '0';
+    form.style.transform = 'translateY(8px)';
+    form.style.transition = 'opacity .3s, transform .3s';
+
+    setTimeout(function(){
+      form.style.display = 'none';
+      const successBox = document.createElement('div');
+      successBox.style.textAlign = 'center';
+      successBox.style.padding = '1rem 0';
+      successBox.innerHTML = `
+        <div class="lead-popup-tag">RECEBIDO ✅</div>
+        <h3 class="lead-popup-title">Obrigada pela proposta!</h3>
+        <p class="lead-popup-text">Já caiu na minha caixa de entrada. Costumo responder em até 12 horas — fica de olho no seu e-mail ou WhatsApp 💛</p>
+      `;
+      form.parentNode.insertBefore(successBox, form.nextSibling);
+    }, 300);
   });
 })();
 </script>
