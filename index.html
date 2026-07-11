@@ -2445,7 +2445,7 @@ footer{
     </div>
     <div class="ios-card ios-form-card fade-up">
       <div class="ios-form-header">Nova proposta</div>
-      <form action="https://formspree.io/f/SEU_ID_AQUI" method="POST">
+      <form id="contatoForm" action="https://formspree.io/f/mdaqneqg" method="POST">
         <div class="form-row">
           <div class="form-group"><label>Nome</label><input type="text" name="nome" placeholder="Ana Silva" required></div>
           <div class="form-group"><label>Marca</label><input type="text" name="marca" placeholder="Coala" required></div>
@@ -2465,7 +2465,7 @@ footer{
         </div>
         <div class="form-group"><label>Sobre a campanha</label><textarea name="mensagem" rows="4" placeholder="Produto, objetivo, prazo, referências..."></textarea></div>
         <button type="submit" class="form-submit">Enviar proposta →</button>
-        <div class="form-note">⏱ Respondo em até 12 horas</div>
+        <div class="form-note" id="contatoFormNote">⏱ Respondo em até 12 horas</div>
       </form>
     </div>
   </div>
@@ -2496,6 +2496,124 @@ footer{
 </div>
 
 <script src="https://player.vimeo.com/api/player.js"></script>
+
+<!-- Analytics: Supabase (rastreamento de visitas, secoes, videos e leads) -->
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
+<script>
+(function(){
+  const SUPABASE_URL = 'https://fvakqbzlihouvidrocpy.supabase.co';
+  const SUPABASE_ANON_KEY = 'sb_publishable_7XKxuw4mmXR1w_Cmjbkapg_r7sF1vm-';
+  const sb = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+  window.ccSupabase = sb;
+
+  // --- sessao (dura enquanto a aba estiver aberta) ---
+  let sessionId = sessionStorage.getItem('cc_session_id');
+  if (!sessionId) {
+    sessionId = (crypto.randomUUID ? crypto.randomUUID() : 'cc-' + Date.now() + '-' + Math.random().toString(36).slice(2));
+    sessionStorage.setItem('cc_session_id', sessionId);
+  }
+  window.ccSessionId = sessionId;
+
+  // --- novo visitante vs recorrente (persiste entre sessoes) ---
+  const isNewVisitor = !localStorage.getItem('cc_visited_before');
+  if (isNewVisitor) localStorage.setItem('cc_visited_before', '1');
+
+  // --- dispositivo: usamos user agent porque a viewport da pagina e forcada em 1280px ---
+  const device = /iPhone|iPad|iPod|Android|Mobile/i.test(navigator.userAgent) ? 'mobile' : 'desktop';
+
+  // --- origem (?origem=instagram etc), fica salva na sessao pra sobreviver a navegacao interna ---
+  const urlOrigem = new URLSearchParams(location.search).get('origem');
+  let origem = urlOrigem || sessionStorage.getItem('cc_origem') || 'direto';
+  sessionStorage.setItem('cc_origem', origem);
+  window.ccOrigem = origem;
+
+  // --- ultimo nicho de video assistido (pra cruzar com lead depois) ---
+  window.ccGetUltimoNicho = function(){ return sessionStorage.getItem('cc_last_nicho') || null; };
+
+  function ccInsert(table, row){
+    fetch(`${SUPABASE_URL}/rest/v1/${table}`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'apikey': SUPABASE_ANON_KEY,
+        'Authorization': `Bearer ${SUPABASE_ANON_KEY}`,
+        'Prefer': 'return=minimal'
+      },
+      body: JSON.stringify(row),
+      keepalive: true
+    }).catch(function(){ /* falha silenciosa: nao deve atrapalhar a navegacao da pessoa */ });
+  }
+  window.ccInsert = ccInsert;
+
+  // --- registra a visita ---
+  ccInsert('page_views', {
+    session_id: sessionId,
+    origem: origem,
+    device: device,
+    is_new_session: isNewVisitor
+  });
+
+  // --- tempo por secao (Sobre, Cases, Servicos, Videos, Contato) ---
+  const TRACKED_SECTIONS = ['sobre','cases','servicos','videos','contato'];
+  const timers = {};
+  TRACKED_SECTIONS.forEach(id => { timers[id] = { start: null, total: 0 }; });
+
+  const sectionObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      const id = entry.target.id;
+      if (!timers[id]) return;
+      if (entry.isIntersecting && entry.intersectionRatio >= 0.5) {
+        if (timers[id].start === null) timers[id].start = Date.now();
+      } else {
+        if (timers[id].start !== null) {
+          timers[id].total += (Date.now() - timers[id].start) / 1000;
+          timers[id].start = null;
+        }
+      }
+    });
+  }, { threshold: [0, 0.5, 1] });
+
+  TRACKED_SECTIONS.forEach(id => {
+    const el = document.getElementById(id);
+    if (el) sectionObserver.observe(el);
+  });
+
+  function flushSectionTimes(){
+    TRACKED_SECTIONS.forEach(id => {
+      if (timers[id].start !== null) {
+        timers[id].total += (Date.now() - timers[id].start) / 1000;
+        timers[id].start = null;
+      }
+      if (timers[id].total >= 1) {
+        ccInsert('section_time', { session_id: sessionId, section: id, seconds: Math.round(timers[id].total) });
+        timers[id].total = 0;
+      }
+    });
+  }
+  document.addEventListener('visibilitychange', function(){
+    if (document.visibilityState === 'hidden') flushSectionTimes();
+  });
+  window.addEventListener('pagehide', flushSectionTimes);
+
+  // --- video: inicio e conclusao (90%+) ---
+  window.ccTrackVideoStart = function(niche, marca){
+    sessionStorage.setItem('cc_last_nicho', niche);
+    ccInsert('video_views', { session_id: sessionId, niche: niche, marca: marca, event: 'start' });
+  };
+  window.ccTrackVideoComplete = function(niche, marca){
+    ccInsert('video_views', { session_id: sessionId, niche: niche, marca: marca, event: 'complete' });
+  };
+
+  // --- lead: grava no Supabase (usado pelos dois formularios) ---
+  window.ccSubmitLead = function(payload){
+    ccInsert('leads', Object.assign({
+      session_id: sessionId,
+      origem: origem,
+      ultimo_nicho: window.ccGetUltimoNicho()
+    }, payload));
+  };
+})();
+</script>
 
 <script>
 // Aguardando os links do YouTube -- cada video: { youtubeId: 'XXXXXXXXXXX', niche: 'casa', marca: 'Nome da Marca', estilo: 'Dica' }
@@ -2595,6 +2713,15 @@ function buildVideoCard(v){
       video.play();
       card.querySelector('.video-play-btn').style.display = 'none';
       card.removeEventListener('click', loadVideo);
+
+      if (window.ccTrackVideoStart) window.ccTrackVideoStart(v.niche, v.marca);
+      let completado = false;
+      video.addEventListener('timeupdate', function(){
+        if (!completado && video.duration && (video.currentTime / video.duration) >= 0.9) {
+          completado = true;
+          if (window.ccTrackVideoComplete) window.ccTrackVideoComplete(v.niche, v.marca);
+        }
+      });
     }, { once: true });
   } else {
     // Vídeo ainda no YouTube (temporário): thumbnail + iframe ao clicar
@@ -2606,6 +2733,7 @@ function buildVideoCard(v){
     card.addEventListener('click', function loadVideo(){
       card.innerHTML = `<iframe src="https://www.youtube-nocookie.com/embed/${v.youtubeId}?autoplay=1&modestbranding=1&controls=0&rel=0&iv_load_policy=3&fs=0&disablekb=1&playsinline=1" frameborder="0" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen></iframe>`;
       card.removeEventListener('click', loadVideo);
+      if (window.ccTrackVideoStart) window.ccTrackVideoStart(v.niche, v.marca);
     }, { once: true });
   }
 
@@ -2726,9 +2854,64 @@ document.addEventListener('DOMContentLoaded', function() {
 
   form.addEventListener('submit', function(e){
     e.preventDefault();
-    // TODO: substituir pelo endpoint real do Formspree quando configurado
-    alert('Obrigada! Em breve entro em contato 💛');
-    overlay.classList.remove('open');
+    const nome = form.nome.value;
+    const rede = form.rede.value;
+    const contato = form.contato.value;
+    const mensagem = form.mensagem.value;
+    const isEmail = contato.indexOf('@') !== -1;
+
+    if (window.ccSubmitLead) {
+      window.ccSubmitLead({
+        nome: nome,
+        email: isEmail ? contato : null,
+        whatsapp: isEmail ? null : contato,
+        marca: rede,
+        mensagem: mensagem,
+        source: 'popup'
+      });
+    }
+
+    fetch('https://formspree.io/f/mdaqneqg', {
+      method: 'POST',
+      headers: { 'Accept': 'application/json' },
+      body: new FormData(form)
+    }).catch(function(){});
+
+    const card = overlay.querySelector('.lead-popup-card');
+    card.innerHTML = '<div class="lead-popup-tag">RECEBIDO ✅</div><h3 class="lead-popup-title">Obrigada!</h3><p class="lead-popup-text">Já te retorno com ideias. Fica de olho no seu contato 💛</p>';
+    setTimeout(function(){ overlay.classList.remove('open'); }, 2500);
+  });
+})();
+</script>
+
+<!-- Formulario de contato principal: grava no Supabase + Formspree sem sair da pagina -->
+<script>
+(function(){
+  const form = document.getElementById('contatoForm');
+  if (!form) return;
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+
+    if (window.ccSubmitLead) {
+      window.ccSubmitLead({
+        nome: form.nome.value,
+        marca: form.marca.value,
+        email: form.email.value,
+        whatsapp: form.whatsapp.value,
+        orcamento: form.orcamento.value,
+        mensagem: form.mensagem.value,
+        source: 'contato'
+      });
+    }
+
+    fetch(form.action, {
+      method: 'POST',
+      headers: { 'Accept': 'application/json' },
+      body: new FormData(form)
+    }).catch(function(){});
+
+    form.querySelectorAll('input,select,textarea,button').forEach(function(el){ el.disabled = true; });
+    document.getElementById('contatoFormNote').textContent = '✅ Recebido! Respondo em até 12 horas.';
   });
 })();
 </script>
