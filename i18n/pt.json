@@ -1,0 +1,245 @@
+{
+  "meta": {
+    "title": "Camila Galinari · UGC Creator & Influencer",
+    "description": "Portfólio de Camila Galinari: UGC, publis, clips e TikTok Shop. +200 marcas atendidas."
+  },
+  "brand": {
+    "first": "CAMILA",
+    "last": "GALINARI"
+  },
+  "nav": {
+    "servicos": "Serviços",
+    "nichos": "Nichos",
+    "metricas": "Métricas",
+    "cta": "Trabalhe comigo",
+    "pt": "PT",
+    "en": "EN",
+    "idiomaLabel": "Idioma: trocar entre português e inglês",
+    "menuAbrir": "Abrir menu",
+    "menuFechar": "Fechar menu",
+    "home": "Camila Galinari, voltar ao topo"
+  },
+  "promo": {
+    "cta": "Enviar proposta",
+    "faltamDias": "faltam {n} dias",
+    "faltaUmDia": "falta 1 dia",
+    "hoje": "é hoje!",
+    "durante": "está rolando agora",
+    "aria": "Ir para o formulário de contato"
+  },
+  "hero": {
+    "kicker": "UGC Creator & Influencer",
+    "portfolio": "Portfolio 2026",
+    "fotoAlt": "Camila Galinari sorrindo, com um microfone e o celular na mão",
+    "ghost": {
+      "g1": "LIFESTYLE",
+      "g2": "CRIATIVIDADE",
+      "g3": "ORGÂNICO",
+      "g4": "CONEXÃO"
+    },
+    "anot": {
+      "tiktok": "Creator nível 3 no TikTok Shop",
+      "mae": "mãe de menina",
+      "engenheira": "engenheira de produção",
+      "live": "Live Shopper",
+      "idade": "{n} anos",
+      "casada": "casada",
+      "pet": "Pet lover",
+      "local": "Artur Nogueira • SP"
+    }
+  },
+  "marcas": {
+    "titulo": "+200 marcas trabalhadas"
+  },
+  "destaques": {
+    "eyebrow": "Resultados",
+    "titulo": "Conteúdos que <em>bombaram</em>",
+    "texto": [
+      "Com a <b>Freegells</b> tivemos uma publicidade com engajamento orgânico disparado em relação aos outros vídeos da página.",
+      "A <b>Menegotti</b> ganhou um lado mais humano (e o vídeo virou até matéria).",
+      "A <b>OLX</b> alcançou a geração Z com conteúdo sem cara de publi.",
+      "E o <b>Airbnb</b> bateu recorde de procura e reservas."
+    ],
+    "fecho": "Conteúdo pensado pra gerar resultado de verdade.",
+    "anterior": "Vídeo anterior",
+    "proximo": "Próximo vídeo",
+    "irPara": "Ir para o vídeo {n}",
+    "somLigar": "Ativar som",
+    "somDesligar": "Desativar som",
+    "pendente": "Vídeo em breve",
+    "pendenteNota": "placeholder: adicionar {arquivo}",
+    "fechar": "Fechar"
+  },
+  "skills": {
+    "eyebrow": "Habilidades",
+    "nota": "aula de hoje:",
+    "soft": "Soft skills",
+    "hard": "Hard skills",
+    "softList": [
+      "Comunicação e oratória",
+      "Humor e carisma",
+      "Pensamento estruturado",
+      "Resolução de problemas",
+      "Adaptabilidade",
+      "Iniciativa empreendedora",
+      "Capacidade de ensinar"
+    ],
+    "hardList": [
+      "Engenharia de Produção",
+      "Roteirização estratégica",
+      "Conteúdo de performance",
+      "Inglês fluente",
+      "Negociação e precificação",
+      "Tecnologia e IA aplicada",
+      "Conteúdo orgânico",
+      "Conteúdo focado em conversão",
+      "Live Shopper"
+    ]
+  },
+  "galeria": {
+    "eyebrow": "Galeria de vídeos",
+    "titulo": "Qual seu <em>nicho</em> ou que <em>formato</em> você busca hoje?",
+    "menu": "Escolha um nicho",
+    "anterior": "Ver vídeos anteriores",
+    "proximo": "Ver mais vídeos",
+    "assistir": "Assistir vídeo {marca}",
+    "emBreve": "Em breve",
+    "emBreveNota": "placeholder: vídeos deste nicho chegando",
+    "ytTitulo": "YouTube Ads",
+    "ytSub": "Sua marca com visibilidade horizontal",
+    "fechar": "Fechar vídeo"
+  },
+  "fotografia": {
+    "eyebrow": "Moodboard",
+    "titulo": "Fotografia",
+    "sub": "Lifestyle, produto e publicidade no mesmo olhar.",
+    "ampliar": "Ampliar foto: {alt}"
+  },
+  "servicos": {
+    "titulo": "O que podemos <em>criar juntos?</em>",
+    "sub": "Antes de escolher o formato, me conta o que a sua marca precisa.. o formato certo vem depois.",
+    "botao": "Quero esse formato",
+    "duvida": "Não sei ainda? Me chama que a gente descobre juntos.",
+    "conversar": "Bora conversar",
+    "itens": {
+      "ugc": {
+        "aba": "Quero vender mais",
+        "nome": "UGC",
+        "desc": "Vídeos com cara de gente real usando seu produto, prontos pra rodar como anúncio no Meta, TikTok e YouTube. Roteiro pensado do gancho ao CTA.",
+        "tags": [
+          "Roteiro estratégico",
+          "Pronto pra anúncio",
+          "Formato 9:16"
+        ],
+        "form": "UGC"
+      },
+      "publi": {
+        "aba": "Quero ser mais vista",
+        "nome": "Publi",
+        "desc": "Sua marca no meu perfil, do meu jeito, pra um público que já confia no que eu indico. Conteúdo que parece conversa, não anúncio.",
+        "tags": [
+          "No meu perfil",
+          "Público engajado",
+          "Formato nativo"
+        ],
+        "form": "Publi"
+      },
+      "clips": {
+        "aba": "Quero menos devolução e mais confiança",
+        "nome": "Clips",
+        "desc": "Vídeos curtos com foco total no produto, pra anexar no seu anúncio do marketplace. O cliente vê tamanho, textura e funcionamento antes de comprar.. menos surpresa, menos devolução, menos comentário ruim e mais venda.",
+        "tags": [
+          "Foco no produto",
+          "Pronto pro marketplace",
+          "Reduz devolução"
+        ],
+        "form": "Clips"
+      },
+      "tiktokshop": {
+        "aba": "Quero vender no TikTok Shop",
+        "nome": "TikTok Shop + Live",
+        "desc": "Sou Creator nível 3 e Live Shopper. Vídeo de vitrine que converte e live com venda acontecendo em tempo real.",
+        "tags": [
+          "Creator nível 3",
+          "Live Shopping",
+          "Venda em tempo real"
+        ],
+        "form": "TikTok Shop + Live"
+      }
+    }
+  },
+  "depoimentos": {
+    "titulo": "O que dizem sobre o <em>trabalho</em>",
+    "sub": "Feedback de marcas que já criaram comigo."
+  },
+  "metricas": {
+    "eyebrow": "Métricas",
+    "titulo": "Números também contam <em>histórias</em>",
+    "sub": "Resultado real, direto das minhas redes.",
+    "tiktokRotulo": "em vendas de um único produto no TikTok Shop",
+    "tiktokNota": "Kit calcinha modeladora: 1.472 unidades vendidas",
+    "igRotulo": "contas alcançadas no Instagram em 30 dias",
+    "igNota": "333,2 mil visualizações no mesmo período",
+    "anot1": "só em setembro: R$ 18,4 mil",
+    "anot2": "um produto só!",
+    "anot3": "+20% de seguidores",
+    "anot4": "em só 30 dias",
+    "ampliar": "Ampliar print: {alt}"
+  },
+  "contato": {
+    "tag": "Vamos co-criar?",
+    "titulo": "Sua marca merece conteúdo que <em>converte.</em>",
+    "sub": "Preencha com os detalhes da sua campanha. Respondo em até 12 horas.",
+    "whatsapp": "WhatsApp",
+    "email": "E-mail",
+    "anot": "me conta tudo aqui!",
+    "cardTitulo": "Nova proposta"
+  },
+  "form": {
+    "nome": "Nome",
+    "marca": "Marca",
+    "email": "E-mail",
+    "whatsapp": "WhatsApp",
+    "whatsappPh": "(19) 99999-9999",
+    "servico": "Serviço de interesse",
+    "selecione": "Selecione...",
+    "optPubli": "Publi",
+    "optNaoSei": "Ainda não sei",
+    "orcamento": "Orçamento (opcional)",
+    "orc1": "Até R$ 500",
+    "orc2": "R$ 500 a R$ 1.500",
+    "orc3": "R$ 1.500 a R$ 3.000",
+    "orc4": "Acima de R$ 3.000",
+    "orc5": "A combinar",
+    "mensagem": "Sobre a campanha",
+    "mensagemPh": "Produto, objetivo, prazo, referências...",
+    "enviar": "Enviar proposta",
+    "nota": "Respondo em até 12 horas",
+    "erroNome": "Me conta seu nome, por favor.",
+    "erroEmail": "Esse e-mail parece incompleto. Confere pra mim?",
+    "erroWhats": "Coloca seu WhatsApp com DDD pra eu te responder.",
+    "falha": "Opa, não consegui enviar agora. Tenta de novo ou me chama no WhatsApp: +55 19 99852-9403.",
+    "sucessoAnot": "recebido! já já te respondo",
+    "sucessoTitulo": "Obrigada pela proposta!",
+    "sucessoTexto": "Já caiu na minha caixa de entrada. Costumo responder em até 12 horas, fica de olho no seu e-mail ou WhatsApp."
+  },
+  "popup": {
+    "tag": "Vamos conversar?",
+    "titulo": "Sentiu falta de alguma coisa no meu portfólio?",
+    "texto": "Deixa seu contato e me conta o que você está pensando e eu te mando <span class=\"hl-ideias\" data-sketch=\"circle\" data-sketch-seed=\"91\" data-sketch-pad=\"12 8\">ideias</span> de como posso agregar a sua marca.",
+    "nome": "Seu nome",
+    "rede": "Instagram, TikTok ou site",
+    "contato": "WhatsApp ou e-mail",
+    "mensagem": "Me conta o que você está pensando...",
+    "botao": "Quero receber ideias",
+    "rodape": "Sem spam, prometo. Só conteúdo relevante.",
+    "erro": "Preenche nome, rede e contato pra eu conseguir te responder.",
+    "fechar": "Fechar",
+    "sucessoTitulo": "Obrigada!",
+    "sucessoTexto": "Já te retorno com ideias. Fica de olho no seu contato."
+  },
+  "footer": {
+    "nome": "Camila Galinari",
+    "local": "© 2026 · Artur Nogueira, SP · @bycamisugc"
+  }
+}

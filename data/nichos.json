@@ -1,0 +1,558 @@
+{
+  "_como_usar": "Cada nicho aparece na ordem abaixo. Em cada vídeo: marca, tipo (ex.: UGC, PUBLICIDADE, CLIP) e estilo (ex.: {pt:\"DEMONSTRAÇÃO\",en:\"DEMO\"}); estilo null não aparece. Vídeo local: video + capa. Vídeo do YouTube: youtube (id). pendente:true vira placeholder.",
+  "nichos": [
+    {
+      "id": "casa",
+      "nome": {
+        "pt": "Casa & Decor",
+        "en": "Home & Decor"
+      },
+      "sub": {
+        "pt": "Produto em uso, na casa de verdade.",
+        "en": "Products in use, in a real home."
+      },
+      "videos": [
+        {
+          "marca": "Inducol",
+          "tipo": "UGC",
+          "estilo": null,
+          "video": "videos/casa-inducol.mp4",
+          "capa": "videos/capas/casa-inducol.jpg"
+        },
+        {
+          "marca": "Porto Brasil",
+          "tipo": "UGC",
+          "estilo": null,
+          "video": "videos/casa-porto-brasil.mp4",
+          "capa": "videos/capas/casa-porto-brasil.jpg"
+        },
+        {
+          "marca": "Valley",
+          "tipo": "UGC",
+          "estilo": null,
+          "video": "videos/casa-valley.mp4",
+          "capa": "videos/capas/casa-valley.jpg"
+        },
+        {
+          "marca": "On Móveis",
+          "tipo": "UGC",
+          "estilo": null,
+          "video": "videos/casa-on-moveis.mp4",
+          "capa": "videos/capas/casa-on-moveis.jpg"
+        },
+        {
+          "marca": "Aize",
+          "tipo": "UGC",
+          "estilo": null,
+          "video": "videos/casa-aize.mp4",
+          "capa": "videos/capas/casa-aize.jpg"
+        }
+      ]
+    },
+    {
+      "id": "tech",
+      "nome": {
+        "pt": "App & Tech",
+        "en": "Apps & Tech"
+      },
+      "sub": {
+        "pt": "Tecnologia explicada como conversa de amiga.",
+        "en": "Tech explained like a chat with a friend."
+      },
+      "videos": [
+        {
+          "marca": "Bora Trocar",
+          "tipo": "UGC",
+          "estilo": null,
+          "video": "videos/tech-bora-trocar.mp4",
+          "capa": "videos/capas/tech-bora-trocar.jpg"
+        },
+        {
+          "marca": "Canva",
+          "tipo": "UGC",
+          "estilo": null,
+          "video": "videos/tech-canva.mp4",
+          "capa": "videos/capas/tech-canva.jpg"
+        },
+        {
+          "marca": "Méliuz",
+          "tipo": "UGC",
+          "estilo": null,
+          "youtube": "Ba9h0ByTnFM"
+        },
+        {
+          "marca": "Perplexity",
+          "tipo": "UGC",
+          "estilo": null,
+          "youtube": "xjg-cJPEJsg"
+        },
+        {
+          "marca": "Rei da Promo",
+          "tipo": "UGC",
+          "estilo": null,
+          "youtube": "a96VSBQwxgU"
+        },
+        {
+          "marca": "Passageiro de Primeira",
+          "tipo": "UGC",
+          "estilo": null,
+          "video": "videos/tech-passageiro-de-primeira.mp4",
+          "capa": "videos/capas/tech-passageiro-de-primeira.jpg"
+        },
+        {
+          "marca": "Só Promoções do Dia",
+          "tipo": "UGC",
+          "estilo": {
+            "pt": "ANÚNCIO NARRADO",
+            "en": "NARRATED AD"
+          },
+          "video": "videos/tech-so-promocoes.mp4",
+          "capa": "videos/capas/tech-so-promocoes.jpg"
+        }
+      ]
+    },
+    {
+      "id": "viagem",
+      "nome": {
+        "pt": "Viagem",
+        "en": "Travel"
+      },
+      "sub": {
+        "pt": "Estadias e destinos que dão vontade de reservar.",
+        "en": "Stays and places that make you want to book."
+      },
+      "videos": [
+        {
+          "marca": "Airbnb",
+          "tipo": "UGC",
+          "estilo": null,
+          "video": "videos/airbnb.mp4",
+          "capa": "videos/capas/airbnb.jpg"
+        },
+        {
+          "marca": "Viagem 1",
+          "pendente": true
+        },
+        {
+          "marca": "Viagem 2",
+          "pendente": true
+        }
+      ]
+    },
+    {
+      "id": "limpeza",
+      "nome": {
+        "pt": "Limpeza & Organização",
+        "en": "Cleaning & Organizing"
+      },
+      "sub": {
+        "pt": "O antes e depois que convence.",
+        "en": "The before and after that convinces."
+      },
+      "videos": [
+        {
+          "marca": "Coala",
+          "tipo": "UGC",
+          "estilo": null,
+          "video": "videos/limpeza-coala.mp4",
+          "capa": "videos/capas/limpeza-coala.jpg"
+        },
+        {
+          "marca": "Duratto",
+          "tipo": "UGC",
+          "estilo": null,
+          "video": "videos/limpeza-duratto.mp4",
+          "capa": "videos/capas/limpeza-duratto.jpg"
+        },
+        {
+          "marca": "Vinagreen",
+          "tipo": "UGC",
+          "estilo": null,
+          "video": "videos/limpeza-vinagreen.mp4",
+          "capa": "videos/capas/limpeza-vinagreen.jpg"
+        },
+        {
+          "marca": "Coperalcool",
+          "tipo": "UGC",
+          "estilo": null,
+          "video": "videos/limpeza-coperalcool.mp4",
+          "capa": "videos/capas/limpeza-coperalcool.jpg"
+        }
+      ]
+    },
+    {
+      "id": "pet",
+      "nome": {
+        "pt": "Pet",
+        "en": "Pet"
+      },
+      "sub": {
+        "pt": "Rotina real com quem manda na casa.",
+        "en": "Real routines with the actual boss of the house."
+      },
+      "videos": [
+        {
+          "marca": "Wigow",
+          "tipo": "UGC",
+          "estilo": null,
+          "video": "videos/pet-wigow-1.mp4",
+          "capa": "videos/capas/pet-wigow-1.jpg"
+        },
+        {
+          "marca": "Wigow",
+          "tipo": "UGC",
+          "estilo": null,
+          "video": "videos/pet-wigow-2.mp4",
+          "capa": "videos/capas/pet-wigow-2.jpg"
+        },
+        {
+          "marca": "Petskin",
+          "tipo": "UGC",
+          "estilo": null,
+          "video": "videos/pet-petskin-1.mp4",
+          "capa": "videos/capas/pet-petskin-1.jpg"
+        },
+        {
+          "marca": "Petskin",
+          "tipo": "UGC",
+          "estilo": null,
+          "video": "videos/pet-petskin-2.mp4",
+          "capa": "videos/capas/pet-petskin-2.jpg"
+        },
+        {
+          "marca": "Petskin",
+          "tipo": "UGC",
+          "estilo": null,
+          "video": "videos/pet-petskin-3.mp4",
+          "capa": "videos/capas/pet-petskin-3.jpg"
+        },
+        {
+          "marca": "Petskin",
+          "tipo": "UGC",
+          "estilo": null,
+          "video": "videos/pet-petskin-4.mp4",
+          "capa": "videos/capas/pet-petskin-4.jpg"
+        }
+      ]
+    },
+    {
+      "id": "moda",
+      "nome": {
+        "pt": "Moda",
+        "en": "Fashion"
+      },
+      "sub": {
+        "pt": "Caimento, textura e estilo no corpo real.",
+        "en": "Fit, texture and style on a real body."
+      },
+      "videos": [
+        {
+          "marca": "Midas Time",
+          "tipo": "UGC",
+          "estilo": null,
+          "video": "videos/moda-midas-time-1.mp4",
+          "capa": "videos/capas/moda-midas-time-1.jpg"
+        },
+        {
+          "marca": "Midas Time",
+          "tipo": "UGC",
+          "estilo": null,
+          "video": "videos/moda-midas-time-2.mp4",
+          "capa": "videos/capas/moda-midas-time-2.jpg"
+        },
+        {
+          "marca": "Upper",
+          "tipo": "UGC",
+          "estilo": null,
+          "video": "videos/moda-upper-1.mp4",
+          "capa": "videos/capas/moda-upper-1.jpg"
+        },
+        {
+          "marca": "Upper",
+          "tipo": "UGC",
+          "estilo": null,
+          "video": "videos/moda-upper-2.mp4",
+          "capa": "videos/capas/moda-upper-2.jpg"
+        }
+      ]
+    },
+    {
+      "id": "beleza",
+      "nome": {
+        "pt": "Beleza & Cuidado",
+        "en": "Beauty & Care"
+      },
+      "sub": {
+        "pt": "Autocuidado sem filtro de propaganda.",
+        "en": "Self-care without the ad filter."
+      },
+      "videos": [
+        {
+          "marca": "Marcia Cosméticos",
+          "tipo": "UGC",
+          "estilo": null,
+          "youtube": "BEpV1ZbiNVU"
+        },
+        {
+          "marca": "Raavi",
+          "tipo": "UGC",
+          "estilo": null,
+          "youtube": "8qSMnA3Yhgc"
+        },
+        {
+          "marca": "Wellife",
+          "tipo": "UGC",
+          "estilo": null,
+          "youtube": "uYoT7Fbpm_c"
+        },
+        {
+          "marca": "Wellife",
+          "tipo": "UGC",
+          "estilo": null,
+          "youtube": "1z4zan43yyo"
+        },
+        {
+          "marca": "Wellife",
+          "tipo": "UGC",
+          "estilo": null,
+          "youtube": "YmA3gkWBzcs"
+        },
+        {
+          "marca": "Hidracce",
+          "tipo": "UGC",
+          "estilo": null,
+          "video": "videos/beleza-hidracce.mp4",
+          "capa": "videos/capas/beleza-hidracce.jpg"
+        },
+        {
+          "marca": "Irene Rí",
+          "tipo": "UGC",
+          "estilo": null,
+          "video": "videos/beleza-irene-ri.mp4",
+          "capa": "videos/capas/beleza-irene-ri.jpg"
+        }
+      ]
+    },
+    {
+      "id": "gastronomia",
+      "nome": {
+        "pt": "Gastronomia",
+        "en": "Food"
+      },
+      "sub": {
+        "pt": "Receita fácil que dá água na boca.",
+        "en": "Easy recipes that make mouths water."
+      },
+      "videos": [
+        {
+          "marca": "Valle Branco",
+          "tipo": "UGC",
+          "estilo": null,
+          "video": "videos/gastronomia-valle-branco-1.mp4",
+          "capa": "videos/capas/gastronomia-valle-branco-1.jpg"
+        },
+        {
+          "marca": "Valle Branco",
+          "tipo": "UGC",
+          "estilo": null,
+          "video": "videos/gastronomia-valle-branco-2.mp4",
+          "capa": "videos/capas/gastronomia-valle-branco-2.jpg"
+        },
+        {
+          "marca": "Rap10",
+          "tipo": "UGC",
+          "estilo": null,
+          "video": "videos/gastronomia-rap10.mp4",
+          "capa": "videos/capas/gastronomia-rap10.jpg"
+        },
+        {
+          "marca": "Fleischmann",
+          "tipo": "UGC",
+          "estilo": null,
+          "video": "videos/gastronomia-fleishman.mp4",
+          "capa": "videos/capas/gastronomia-fleishman.jpg"
+        }
+      ]
+    },
+    {
+      "id": "auto",
+      "nome": {
+        "pt": "Automotivo",
+        "en": "Automotive"
+      },
+      "sub": {
+        "pt": "Do dia a dia no carro à decisão de compra.",
+        "en": "From everyday driving to the buying decision."
+      },
+      "videos": [
+        {
+          "marca": "OLX",
+          "tipo": "UGC",
+          "estilo": null,
+          "youtube": "Ps1OHm1putE"
+        },
+        {
+          "marca": "Motor Consulta",
+          "tipo": "UGC",
+          "estilo": null,
+          "youtube": "tp6npTetwZ8"
+        },
+        {
+          "marca": "OLX",
+          "tipo": "UGC",
+          "estilo": null,
+          "youtube": "sCcLxK20n7Y"
+        },
+        {
+          "marca": "OLX",
+          "tipo": "UGC",
+          "estilo": null,
+          "youtube": "hK4UT_s1gqo"
+        }
+      ]
+    },
+    {
+      "id": "ferramentas",
+      "nome": {
+        "pt": "Ferramentas",
+        "en": "Tools"
+      },
+      "sub": {
+        "pt": "Demonstração que mostra força e resultado.",
+        "en": "Demos that show power and results."
+      },
+      "videos": [
+        {
+          "marca": "Menegotti",
+          "tipo": "UGC",
+          "estilo": null,
+          "video": "videos/ferramentas-menegotti-1.mp4",
+          "capa": "videos/capas/ferramentas-menegotti-1.jpg"
+        },
+        {
+          "marca": "Menegotti",
+          "tipo": "UGC",
+          "estilo": null,
+          "video": "videos/ferramentas-menegotti-2.mp4",
+          "capa": "videos/capas/ferramentas-menegotti-2.jpg"
+        },
+        {
+          "marca": "Menegotti",
+          "tipo": "UGC",
+          "estilo": null,
+          "video": "videos/ferramentas-menegotti-3.mp4",
+          "capa": "videos/capas/ferramentas-menegotti-3.jpg"
+        },
+        {
+          "marca": "Mixtou",
+          "tipo": "UGC",
+          "estilo": null,
+          "video": "videos/ferramentas-mixtou.mp4",
+          "capa": "videos/capas/ferramentas-mixtou.jpg"
+        }
+      ]
+    },
+    {
+      "id": "extras",
+      "nome": {
+        "pt": "Extras",
+        "en": "Extras"
+      },
+      "sub": {
+        "pt": "Formatos que não cabem numa caixinha.",
+        "en": "Formats that don't fit in a box."
+      },
+      "videos": [
+        {
+          "marca": "Litet",
+          "tipo": "UGC",
+          "estilo": null,
+          "video": "videos/extras-litet-berco.mp4",
+          "capa": "videos/capas/extras-litet-berco.jpg"
+        },
+        {
+          "marca": "Litet",
+          "tipo": "UGC",
+          "estilo": null,
+          "video": "videos/extras-litet-cadeirinha.mp4",
+          "capa": "videos/capas/extras-litet-cadeirinha.jpg"
+        },
+        {
+          "marca": "BIC",
+          "tipo": "UGC",
+          "estilo": null,
+          "video": "videos/extras-bic-lapis-de-cor.mp4",
+          "capa": "videos/capas/extras-bic-lapis-de-cor.jpg"
+        },
+        {
+          "marca": "BIC",
+          "tipo": "UGC",
+          "estilo": null,
+          "video": "videos/extras-bic-lamina.mp4",
+          "capa": "videos/capas/extras-bic-lamina.jpg"
+        },
+        {
+          "marca": "Mixtou",
+          "tipo": "UGC",
+          "estilo": null,
+          "video": "videos/extras-mixtou-pilhas.mp4",
+          "capa": "videos/capas/extras-mixtou-pilhas.jpg"
+        }
+      ]
+    },
+    {
+      "id": "clips",
+      "nome": {
+        "pt": "Clips",
+        "en": "Clips"
+      },
+      "sub": {
+        "pt": "Foco total no produto, pronto pro marketplace.",
+        "en": "All about the product, marketplace ready."
+      },
+      "videos": [
+        {
+          "marca": "Roupão",
+          "tipo": "CLIP",
+          "estilo": null,
+          "video": "videos/clips-roupao.mp4",
+          "capa": "videos/capas/clips-roupao.jpg"
+        },
+        {
+          "marca": "Maiô Marrakesh",
+          "tipo": "CLIP",
+          "estilo": null,
+          "video": "videos/clips-maio-marrakesh.mp4",
+          "capa": "videos/capas/clips-maio-marrakesh.jpg"
+        },
+        {
+          "marca": "Painel Ripado EVA",
+          "tipo": "CLIP",
+          "estilo": null,
+          "video": "videos/clips-painel-ripado-eva.mp4",
+          "capa": "videos/capas/clips-painel-ripado-eva.jpg"
+        },
+        {
+          "marca": "Sofá Modular Copa",
+          "tipo": "CLIP",
+          "estilo": null,
+          "video": "videos/clips-copa.mp4",
+          "capa": "videos/capas/clips-copa.jpg"
+        },
+        {
+          "marca": "Upper",
+          "tipo": "CLIP",
+          "estilo": null,
+          "video": "videos/clips-upper.mp4",
+          "capa": "videos/capas/clips-upper.jpg"
+        }
+      ]
+    }
+  ],
+  "youtubeAds": {
+    "marca": "Perplexity",
+    "tipo": "YOUTUBE ADS",
+    "video": "videos/youtube-perplexity.mp4",
+    "capa": "videos/capas/youtube-perplexity.jpg"
+  }
+}

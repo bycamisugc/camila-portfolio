@@ -1,0 +1,245 @@
+{
+  "meta": {
+    "title": "Camila Galinari · UGC Creator & Influencer",
+    "description": "Camila Galinari's portfolio: UGC, sponsored posts, clips and TikTok Shop. 200+ brands served."
+  },
+  "brand": {
+    "first": "CAMILA",
+    "last": "GALINARI"
+  },
+  "nav": {
+    "servicos": "Services",
+    "nichos": "Niches",
+    "metricas": "Metrics",
+    "cta": "Work with me",
+    "pt": "PT",
+    "en": "EN",
+    "idiomaLabel": "Language: switch between Portuguese and English",
+    "menuAbrir": "Open menu",
+    "menuFechar": "Close menu",
+    "home": "Camila Galinari, back to top"
+  },
+  "promo": {
+    "cta": "Send proposal",
+    "faltamDias": "{n} days to go",
+    "faltaUmDia": "1 day to go",
+    "hoje": "it's today!",
+    "durante": "happening now",
+    "aria": "Go to the contact form"
+  },
+  "hero": {
+    "kicker": "UGC Creator & Influencer",
+    "portfolio": "Portfolio 2026",
+    "fotoAlt": "Camila Galinari smiling, holding a microphone and her phone",
+    "ghost": {
+      "g1": "LIFESTYLE",
+      "g2": "CREATIVITY",
+      "g3": "ORGANIC",
+      "g4": "CONNECTION"
+    },
+    "anot": {
+      "tiktok": "Level 3 TikTok Shop Creator",
+      "mae": "girl mom",
+      "engenheira": "production engineer",
+      "live": "Live Shopper",
+      "idade": "{n} years old",
+      "casada": "married",
+      "pet": "Pet lover",
+      "local": "Artur Nogueira • SP, Brazil"
+    }
+  },
+  "marcas": {
+    "titulo": "200+ brands worked with"
+  },
+  "destaques": {
+    "eyebrow": "Results",
+    "titulo": "Content that <em>took off</em>",
+    "texto": [
+      "With <b>Freegells</b>, a sponsored video drove organic engagement far above every other video on the page.",
+      "<b>Menegotti</b> gained a more human side (and the video even made the news).",
+      "<b>OLX</b> reached Gen Z with content that didn't feel like an ad.",
+      "And <b>Airbnb</b> hit record searches and bookings."
+    ],
+    "fecho": "Content built to drive real results.",
+    "anterior": "Previous video",
+    "proximo": "Next video",
+    "irPara": "Go to video {n}",
+    "somLigar": "Turn sound on",
+    "somDesligar": "Turn sound off",
+    "pendente": "Video coming soon",
+    "pendenteNota": "placeholder: add {arquivo}",
+    "fechar": "Close"
+  },
+  "skills": {
+    "eyebrow": "Skills",
+    "nota": "today's lesson:",
+    "soft": "Soft skills",
+    "hard": "Hard skills",
+    "softList": [
+      "Communication and public speaking",
+      "Humor and charisma",
+      "Structured thinking",
+      "Problem solving",
+      "Adaptability",
+      "Entrepreneurial drive",
+      "Knack for teaching"
+    ],
+    "hardList": [
+      "Production Engineering",
+      "Strategic scriptwriting",
+      "Performance content",
+      "Fluent English",
+      "Negotiation and pricing",
+      "Applied tech and AI",
+      "Organic content",
+      "Conversion-focused content",
+      "Live Shopper"
+    ]
+  },
+  "galeria": {
+    "eyebrow": "Video gallery",
+    "titulo": "Which <em>niche</em> or <em>format</em> are you looking for today?",
+    "menu": "Pick a niche",
+    "anterior": "See previous videos",
+    "proximo": "See more videos",
+    "assistir": "Watch {marca} video",
+    "emBreve": "Coming soon",
+    "emBreveNota": "placeholder: videos for this niche on the way",
+    "ytTitulo": "YouTube Ads",
+    "ytSub": "Your brand in widescreen",
+    "fechar": "Close video"
+  },
+  "fotografia": {
+    "eyebrow": "Moodboard",
+    "titulo": "Photography",
+    "sub": "Lifestyle, product and advertising through the same lens.",
+    "ampliar": "Enlarge photo: {alt}"
+  },
+  "servicos": {
+    "titulo": "What can we <em>create together?</em>",
+    "sub": "Before picking a format, tell me what your brand needs.. the right format comes next.",
+    "botao": "I want this format",
+    "duvida": "Not sure yet? Reach out and we'll figure it out together.",
+    "conversar": "Let's talk",
+    "itens": {
+      "ugc": {
+        "aba": "I want to sell more",
+        "nome": "UGC",
+        "desc": "Videos of a real person using your product, ready to run as ads on Meta, TikTok and YouTube. Scripted from hook to CTA.",
+        "tags": [
+          "Strategic script",
+          "Ad-ready",
+          "9:16 format"
+        ],
+        "form": "UGC"
+      },
+      "publi": {
+        "aba": "I want more visibility",
+        "nome": "Sponsored post",
+        "desc": "Your brand on my profile, my way, for an audience that already trusts my recommendations. Content that feels like a conversation, not an ad.",
+        "tags": [
+          "On my profile",
+          "Engaged audience",
+          "Native format"
+        ],
+        "form": "Publi"
+      },
+      "clips": {
+        "aba": "I want fewer returns and more trust",
+        "nome": "Clips",
+        "desc": "Short videos fully focused on the product, to attach to your marketplace listing. Shoppers see size, texture and how it works before buying.. fewer surprises, fewer returns, fewer bad reviews and more sales.",
+        "tags": [
+          "Product focused",
+          "Marketplace ready",
+          "Fewer returns"
+        ],
+        "form": "Clips"
+      },
+      "tiktokshop": {
+        "aba": "I want to sell on TikTok Shop",
+        "nome": "TikTok Shop + Live",
+        "desc": "I'm a Level 3 Creator and Live Shopper. Showcase videos that convert and lives with sales happening in real time.",
+        "tags": [
+          "Level 3 Creator",
+          "Live Shopping",
+          "Real-time sales"
+        ],
+        "form": "TikTok Shop + Live"
+      }
+    }
+  },
+  "depoimentos": {
+    "titulo": "What they say about the <em>work</em>",
+    "sub": "Feedback from brands that have created with me."
+  },
+  "metricas": {
+    "eyebrow": "Metrics",
+    "titulo": "Numbers tell <em>stories</em> too",
+    "sub": "Real results, straight from my accounts.",
+    "tiktokRotulo": "in sales of a single product on TikTok Shop",
+    "tiktokNota": "Shapewear kit: 1,472 units sold",
+    "igRotulo": "accounts reached on Instagram in 30 days",
+    "igNota": "333.2K views in the same period",
+    "anot1": "September alone: R$18.4K",
+    "anot2": "just one product!",
+    "anot3": "+20% followers",
+    "anot4": "in just 30 days",
+    "ampliar": "Enlarge screenshot: {alt}"
+  },
+  "contato": {
+    "tag": "Let's co-create?",
+    "titulo": "Your brand deserves content that <em>converts.</em>",
+    "sub": "Fill in your campaign details. I reply within 12 hours.",
+    "whatsapp": "WhatsApp",
+    "email": "Email",
+    "anot": "tell me everything here!",
+    "cardTitulo": "New proposal"
+  },
+  "form": {
+    "nome": "Name",
+    "marca": "Brand",
+    "email": "Email",
+    "whatsapp": "WhatsApp",
+    "whatsappPh": "+55 19 99999-9999",
+    "servico": "Service you're interested in",
+    "selecione": "Select...",
+    "optPubli": "Sponsored post",
+    "optNaoSei": "Not sure yet",
+    "orcamento": "Budget (optional)",
+    "orc1": "Up to R$500",
+    "orc2": "R$500 to R$1,500",
+    "orc3": "R$1,500 to R$3,000",
+    "orc4": "Over R$3,000",
+    "orc5": "To be discussed",
+    "mensagem": "About the campaign",
+    "mensagemPh": "Product, goal, deadline, references...",
+    "enviar": "Send proposal",
+    "nota": "I reply within 12 hours",
+    "erroNome": "Please tell me your name.",
+    "erroEmail": "This email looks incomplete. Mind checking it?",
+    "erroWhats": "Add your WhatsApp with area code so I can reply.",
+    "falha": "Oops, I couldn't send it right now. Try again or message me on WhatsApp: +55 19 99852-9403.",
+    "sucessoAnot": "got it! I'll reply soon",
+    "sucessoTitulo": "Thanks for your proposal!",
+    "sucessoTexto": "It's already in my inbox. I usually reply within 12 hours, so keep an eye on your email or WhatsApp."
+  },
+  "popup": {
+    "tag": "Let's talk?",
+    "titulo": "Missing something in my portfolio?",
+    "texto": "Leave your contact, tell me what you have in mind, and I'll send you <span class=\"hl-ideias\" data-sketch=\"circle\" data-sketch-seed=\"91\" data-sketch-pad=\"12 8\">ideas</span> on how I can add value to your brand.",
+    "nome": "Your name",
+    "rede": "Instagram, TikTok or website",
+    "contato": "WhatsApp or email",
+    "mensagem": "Tell me what you have in mind...",
+    "botao": "Send me ideas",
+    "rodape": "No spam, promise. Only relevant stuff.",
+    "erro": "Fill in name, profile and contact so I can reply.",
+    "fechar": "Close",
+    "sucessoTitulo": "Thank you!",
+    "sucessoTexto": "I'll get back to you with ideas soon. Keep an eye on your inbox."
+  },
+  "footer": {
+    "nome": "Camila Galinari",
+    "local": "© 2026 · Artur Nogueira, SP · @bycamisugc"
+  }
+}

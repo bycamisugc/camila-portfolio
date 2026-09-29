@@ -1,0 +1,33 @@
+{
+  "_como_usar": "Vídeos do carrossel 'Conteúdos que bombaram', na ordem. Com \"pendente\": true o slide aparece como placeholder até o arquivo existir. 'extra' é opcional (abre uma imagem ampliada, ex.: a matéria da Menegotti).",
+  "inicio": 0,
+  "videos": [
+    {
+      "marca": "Freegells",
+      "video": "videos/freegells.mp4",
+      "capa": "videos/capas/freegells.jpg"
+    },
+    {
+      "marca": "Menegotti",
+      "video": "videos/menegotti.mp4",
+      "capa": "videos/capas/menegotti.jpg",
+      "extra": {
+        "texto": {
+          "pt": "virou matéria",
+          "en": "made the news"
+        },
+        "imagem": "img/reportagem-menegotti.jpg"
+      }
+    },
+    {
+      "marca": "OLX",
+      "video": "videos/olx.mp4",
+      "capa": "videos/capas/olx.jpg"
+    },
+    {
+      "marca": "Airbnb",
+      "video": "videos/airbnb.mp4",
+      "capa": "videos/capas/airbnb.jpg"
+    }
+  ]
+}

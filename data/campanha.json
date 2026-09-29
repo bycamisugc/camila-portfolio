@@ -1,0 +1,13 @@
+{
+  "_como_usar": "A barra mostra a primeira campanha (pela dataEvento) que ainda nao terminou (dataFim) e que ja comecou (dataInicio, opcional). Datas no formato AAAA-MM-DD. Pode deixar varias campanhas cadastradas (Dia das Maes, Natal...) e elas entram sozinhas. Quando nenhuma estiver ativa, aparece a mensagemPadrao.",
+  "campanhas": [
+    {
+      "nome": "Black Friday 2026",
+      "destaque": { "pt": "BLACK FRIDAY", "en": "BLACK FRIDAY" },
+      "mensagem": { "pt": "antecipe seus criativos antes do pico", "en": "get your creatives ready before the rush" },
+      "dataEvento": "2026-11-27",
+      "dataFim": "2026-11-27"
+    }
+  ],
+  "mensagemPadrao": { "pt": "Agenda aberta para novas campanhas", "en": "Now booking new campaigns" }
+}

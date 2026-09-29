@@ -221,7 +221,8 @@ const sb = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 const NICHE_LABELS = {
   casa:'Casa & Decor', tech:'App & Tech', limpeza:'Limpeza', pet:'Pet', moda:'Moda',
   beleza:'Beauty & Care', gastronomia:'Gastronomia', auto:'Automotivo',
-  ferramentas:'Ferramentas', youtube:'Youtube', clips:'Clips'
+  ferramentas:'Ferramentas', youtube:'Youtube', clips:'Clips',
+  viagem:'Viagem', extras:'Extras'
 };
 
 /* ---------------- AUTH ---------------- */
@@ -392,7 +393,7 @@ async function loadData(){
   /* ---- secao mais parada ---- */
   const sectionTotals = {};
   sectionTimes.forEach(s => { sectionTotals[s.section] = (sectionTotals[s.section]||0) + Number(s.seconds); });
-  const sectionLabels = { sobre:'Sobre', cases:'Cases', servicos:'Serviços', videos:'Vídeos', contato:'Contato' };
+  const sectionLabels = { sobre:'Sobre', inicio:'Início (HERO)', cases:'Cases / Conteúdos que bombaram', servicos:'Serviços', videos:'Vídeos / Nichos', metricas:'Métricas', contato:'Contato' };
   const sectionEntries = sortedEntries(sectionTotals).map(([k,v]) => [k, Math.round(v)]);
   renderRankList(document.getElementById('secaoRanking'), sectionEntries, k => sectionLabels[k]||k);
 

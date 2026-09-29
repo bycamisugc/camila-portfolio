@@ -1,0 +1,96 @@
+{
+  "_como_usar": "Depoimentos reais de marcas. instagram: \"@perfil\" (opcional, abre em nova aba). titulo: tipo de trabalho (ex.: UGC para anúncio); vazio não aparece.",
+  "depoimentos": [
+    {
+      "marca": "CNA S.A.",
+      "instagram": null,
+      "logo": "logos/depoimentos/cna.png",
+      "titulo": {
+        "pt": "",
+        "en": ""
+      },
+      "texto": {
+        "pt": "Os vídeos da Camila foram muito bem feitos, dinâmicos e criativos! Nota 10",
+        "en": "Camila's videos were really well made, dynamic and creative! A perfect 10"
+      }
+    },
+    {
+      "marca": "Indexnet Publicidade Digital",
+      "instagram": null,
+      "logo": "logos/depoimentos/indexnet.png",
+      "titulo": {
+        "pt": "",
+        "en": ""
+      },
+      "texto": {
+        "pt": "Camila foi comunicativa e entregou um ótimo trabalho! Conteúdo criativo e dinâmico, bem alinhado com a proposta da marca",
+        "en": "Camila was communicative and delivered great work! Creative, dynamic content, well aligned with the brand's proposal"
+      }
+    },
+    {
+      "marca": "Renova Pisos",
+      "instagram": null,
+      "logo": "logos/depoimentos/renova-pisos.png",
+      "titulo": {
+        "pt": "",
+        "en": ""
+      },
+      "texto": {
+        "pt": "Ótima entrega de conteúdo, vídeo espontâneo e bem produzido, se encaixou perfeitamente no que minha empresa buscava.",
+        "en": "Great content delivery, a spontaneous and well-produced video that fit perfectly with what my company was looking for."
+      }
+    },
+    {
+      "marca": "Pra Decorar",
+      "instagram": null,
+      "logo": "logos/depoimentos/pra-decorar.png",
+      "titulo": {
+        "pt": "",
+        "en": ""
+      },
+      "texto": {
+        "pt": "O vídeo da Camila ficou incrível, mostrou o nosso produto em ação. Um olhar impecável pra nossa marca. Trabalho excelente!",
+        "en": "Camila's video turned out amazing and showed our product in action. A flawless eye for our brand. Excellent work!"
+      }
+    },
+    {
+      "marca": "MS Empreendimentos Digitais",
+      "instagram": null,
+      "logo": "logos/depoimentos/ms-empreendimentos.png",
+      "titulo": {
+        "pt": "",
+        "en": ""
+      },
+      "texto": {
+        "pt": "Amamos o trabalho da Camila, nos entregou o vídeo antes do prazo e foi super profissional. O conteúdo ficou muito melhor do que esperávamos, com certeza trabalharemos juntas mais vezes.",
+        "en": "We loved Camila's work. She delivered the video ahead of schedule and was super professional. The content turned out much better than we expected, and we will definitely work together again."
+      }
+    },
+    {
+      "marca": "Grupo Menegotti",
+      "instagram": null,
+      "logo": "logos/depoimentos/grupo-menegotti.png",
+      "titulo": {
+        "pt": "",
+        "en": ""
+      },
+      "texto": {
+        "pt": "Trabalho impecável! Sabemos que os vídeos que combinamos não foram fáceis de produzir, exigiram muito trabalho, dedicação e atenção aos detalhes. E o resultado não poderia ter sido melhor! A Camila nos entregou tudo com qualidade, mostrando a eficiência e a robustez do nosso guincho. Parceria como essa faz toda a diferença. Obrigado pelo empenho!",
+        "en": "Flawless work! We know the videos we agreed on were not easy to produce; they took a lot of work, dedication and attention to detail. And the result could not have been better! Camila delivered everything with quality, showing how efficient and sturdy our winch is. A partnership like this makes all the difference. Thank you for the effort!"
+      }
+    },
+    {
+      "marca": "Verbalize",
+      "instagram": null,
+      "logo": "logos/depoimentos/verbalize.png",
+      "titulo": {
+        "pt": "",
+        "en": ""
+      },
+      "texto": {
+        "pt": "A Camis é ótima! Entendeu perfeitamente qual era o conceito do conteúdo. Na verdade não só entendeu, como sugeriu ideias que iam de encontro com o que precisávamos para o Chácaras Limeira.",
+        "en": "Camis is great! She understood the content concept perfectly. In fact, she not only understood it but also suggested ideas that matched exactly what we needed for Chácaras Limeira."
+      }
+    }
+  ]
+}

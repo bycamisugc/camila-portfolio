@@ -1,0 +1,73 @@
+{
+  "_como_usar": "Números dos contadores (valor numérico + prefixo/sufixo) e prints de cada bloco. Os textos das anotações ficam em i18n (metricas.*).",
+  "tiktok": {
+    "valor": 49.4,
+    "casas": 1,
+    "prefixo": {
+      "pt": "R$ ",
+      "en": "R$"
+    },
+    "sufixo": {
+      "pt": " mil",
+      "en": "K"
+    },
+    "prints": [
+      {
+        "arquivo": "metricas/tiktokshop/vendas-kit-modeladora.jpg",
+        "alt": {
+          "pt": "Vendas do kit calcinha modeladora no TikTok Shop",
+          "en": "Shapewear kit sales on TikTok Shop"
+        }
+      },
+      {
+        "arquivo": "metricas/tiktokshop/dados-setembro.jpg",
+        "alt": {
+          "pt": "Painel de comissões do TikTok Shop em setembro de 2026",
+          "en": "TikTok Shop commission dashboard, September 2026"
+        }
+      },
+      {
+        "arquivo": "metricas/tiktokshop/nivel-3.jpg",
+        "alt": {
+          "pt": "Selo de Creator nível 3 no TikTok Shop",
+          "en": "Level 3 Creator badge on TikTok Shop"
+        }
+      }
+    ]
+  },
+  "instagram": {
+    "valor": 172.6,
+    "casas": 1,
+    "prefixo": {
+      "pt": "",
+      "en": ""
+    },
+    "sufixo": {
+      "pt": " mil",
+      "en": "K"
+    },
+    "prints": [
+      {
+        "arquivo": "metricas/instagram/visao-geral.jpg",
+        "alt": {
+          "pt": "Visão geral do Instagram: 333.218 visualizações e 172.642 contas alcançadas em 30 dias",
+          "en": "Instagram overview: 333,218 views and 172,642 accounts reached in 30 days"
+        }
+      },
+      {
+        "arquivo": "metricas/instagram/seguidores.jpg",
+        "alt": {
+          "pt": "Seguidores do Instagram: 6.994, alta de 20,2% no mês",
+          "en": "Instagram followers: 6,994, up 20.2% in a month"
+        }
+      },
+      {
+        "arquivo": "metricas/instagram/conteudos.jpg",
+        "alt": {
+          "pt": "Conteúdos mais vistos no Instagram em 30 dias",
+          "en": "Most viewed Instagram content in 30 days"
+        }
+      }
+    ]
+  }
+}
