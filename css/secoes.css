@@ -30,7 +30,7 @@ html.no-scroll { overflow: hidden; }
 .marcas {
   position: relative;
   z-index: 5;
-  padding: 34px 0 40px;
+  padding: calc(var(--espaco-secao) / 2) 0;   /* faixa fina: metade do espaço padrão */
   background: var(--bg);
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
@@ -87,7 +87,6 @@ html.no-scroll { overflow: hidden; }
 .marquee-list li:hover img { transform: scale(1.08); }
 
 @media (max-width: 899px) {
-  .marcas { padding: 26px 0 30px; }
   .marcas-titulo { margin-bottom: 20px; }
   .marquee-list { --logo-h: 36px; --logo-gap: 32px; }
   .marquee-list li, .marquee-list img { max-width: 110px; }
@@ -97,7 +96,7 @@ html.no-scroll { overflow: hidden; }
    3. CONTEÚDOS QUE BOMBARAM
    ========================================================= */
 .destaques {
-  padding: clamp(44px, 5vw, 64px) 0 clamp(56px, 7vw, 96px);
+  padding: var(--espaco-secao) 0;
   overflow-x: clip;
 }
 .destaques-grid {
@@ -130,7 +129,7 @@ html.no-scroll { overflow: hidden; }
   --cf-w: clamp(240px, 22vw, 310px);
   --cf-step: calc(var(--cf-w) * .74);
   position: relative;
-  padding-bottom: 64px;
+  padding-bottom: 52px;   /* espaço dos pontinhos */
 }
 .cflow-stage {
   position: relative;

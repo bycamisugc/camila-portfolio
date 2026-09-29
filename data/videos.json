@@ -47,15 +47,6 @@
       "tipo": ""
     },
     {
-      "arquivo": "videos/tech-bora-trocar.mp4",
-      "youtube": "",
-      "capa": "videos/capas/tech-bora-trocar.jpg",
-      "nicho": "tech",
-      "marca": "Bora Trocar",
-      "formato": "UGC",
-      "tipo": ""
-    },
-    {
       "arquivo": "videos/tech-canva.mp4",
       "youtube": "",
       "capa": "videos/capas/tech-canva.jpg",
@@ -79,15 +70,6 @@
       "capa": "",
       "nicho": "tech",
       "marca": "Perplexity",
-      "formato": "UGC",
-      "tipo": ""
-    },
-    {
-      "arquivo": "",
-      "youtube": "a96VSBQwxgU",
-      "capa": "",
-      "nicho": "tech",
-      "marca": "Rei da Promo",
       "formato": "UGC",
       "tipo": ""
     },
@@ -158,15 +140,6 @@
       "arquivo": "videos/pet-wigow-1.mp4",
       "youtube": "",
       "capa": "videos/capas/pet-wigow-1.jpg",
-      "nicho": "pet",
-      "marca": "Wigow",
-      "formato": "UGC",
-      "tipo": ""
-    },
-    {
-      "arquivo": "videos/pet-wigow-2.mp4",
-      "youtube": "",
-      "capa": "videos/capas/pet-wigow-2.jpg",
       "nicho": "pet",
       "marca": "Wigow",
       "formato": "UGC",

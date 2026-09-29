@@ -25,13 +25,15 @@
   --nav-h: 72px;
   --header-h: calc(var(--promo-h) + var(--nav-h));
   --gutter: clamp(16px, 4vw, 56px);
+  /* espaço vertical padrão de TODAS as seções (em cima e embaixo). Ajuste aqui. */
+  --espaco-secao: 64px;
   --maxw: 1320px;
 
   --ease-out: cubic-bezier(.22, .8, .24, 1);
 }
 
 @media (max-width: 899px) {
-  :root { --promo-h: 36px; --nav-h: 60px; }
+  :root { --promo-h: 36px; --nav-h: 60px; --espaco-secao: 40px; }
 }
 
 /* ---------- reset leve ---------- */

@@ -2,7 +2,7 @@
    10. CONTATO
    ========================================================= */
 .contato {
-  padding: clamp(72px, 9vw, 130px) 0;
+  padding: var(--espaco-secao) 0;
   background: var(--ink);
   color: var(--bg);
   overflow-x: clip;
@@ -37,12 +37,13 @@
 .contato-anot {
   display: flex;
   align-items: flex-start;
-  gap: 4px;
-  margin-top: 34px;
+  gap: 6px;
+  margin-top: 22px;
   font-size: 30px;
   color: var(--bg);
 }
-.contato-seta { display: block; width: 120px; height: 60px; margin-top: 16px; }
+/* desktop: seta sai da anotação e aponta para o card do formulário, à direita */
+.contato-anot .contato-seta { display: block; flex: none; width: clamp(120px, 14vw, 230px); height: 70px; margin-top: 10px; }
 .contato-seta .sketch-svg path { stroke: var(--gold) !important; }
 
 /* ---------- folha de caderno ---------- */
@@ -104,8 +105,9 @@
   .contato-links a { min-height: 60px; padding: 8px 16px; border: 1px solid rgba(250, 248, 245, .16); border-radius: 14px; }
   .contato-links a:hover { padding-left: 16px; }
   .contato-links { gap: 10px; }
-  .contato-anot { font-size: 26px; }
-  .contato-seta { transform: rotate(60deg); width: 70px; margin: 22px 0 0 10px; }
+  /* celular: anotação logo acima do formulário, seta curta para baixo */
+  .contato-anot-m { flex-direction: row; align-items: flex-end; margin: 4px 0 -12px 8px; font-size: 26px; }
+  .contato-anot-m .contato-seta { width: 44px; height: 54px; margin: 0; }
   .form-row { grid-template-columns: 1fr; }
 }
 

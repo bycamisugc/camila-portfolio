@@ -37,10 +37,7 @@
       if (f.largura && f.altura) { img.width = f.largura; img.height = f.altura; }
       img.loading = 'lazy';
       img.decoding = 'async';
-      const num = document.createElement('span');
-      num.className = 'mb-num';
-      num.textContent = 'Nº ' + String(i + 1).padStart(2, '0');
-      b.append(img, num);
+      b.append(img);
       b.addEventListener('click', () => Lightbox.open(f.arquivo, I18N.pick(f.alt)));
       board.appendChild(b);
     });

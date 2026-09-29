@@ -29,7 +29,7 @@
 /* =========================================================
    7. SERVIÇOS: seletor de objetivo
    ========================================================= */
-.servicos { padding: clamp(56px, 6vw, 88px) 0; background: #f4efe9; border-top: 1px solid var(--line); }
+.servicos { padding: var(--espaco-secao) 0; background: #f4efe9; border-top: 1px solid var(--line); }
 .servicos-head { text-align: center; max-width: 760px; margin: 0 auto clamp(28px, 3vw, 44px); }
 .servicos-sub { margin-top: 18px; color: var(--ink-2); font-size: 16px; }
 
@@ -82,12 +82,12 @@
 /* =========================================================
    8. DEPOIMENTOS
    ========================================================= */
-.depo { padding: clamp(64px, 8vw, 110px) 0 clamp(56px, 7vw, 96px); }
+.depo { padding: var(--espaco-secao) 0; }
 .depo-head { text-align: center; margin-bottom: clamp(32px, 4vw, 52px); }
 .depo-sub { margin-top: 14px; color: var(--ink-3); }
 .depo-marquee {
   overflow: hidden;
-  padding: 12px 0 30px;
+  padding: 12px 0 22px;
   -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 8%, #000 92%, transparent 100%);
           mask-image: linear-gradient(90deg, transparent 0, #000 8%, #000 92%, transparent 100%);
 }
@@ -136,7 +136,7 @@
 /* =========================================================
    9. MÉTRICAS: colagem / scrapbook
    ========================================================= */
-.metricas { padding: clamp(56px, 6vw, 88px) 0; background: #f4efe9; border-top: 1px solid var(--line); overflow-x: clip; }
+.metricas { padding: var(--espaco-secao) 0; background: #f4efe9; border-top: 1px solid var(--line); overflow-x: clip; }
 .metricas-head { max-width: 720px; margin-bottom: clamp(28px, 3vw, 44px); }
 .metricas-sub { margin-top: 12px; color: var(--ink-3); }
 
@@ -225,9 +225,12 @@
 .mt-prints .polaroid:nth-of-type(1) { left: 0;   top: 44px; width: 50%; --r: -4deg; }
 .mt-prints .polaroid:nth-of-type(2) { left: 40%; top: 30px; width: 50%; --r: 3.5deg; }
 .mt-prints .polaroid:nth-of-type(3) { left: 16%; top: 200px; width: 62%; --r: -1.5deg; }
-[data-prints="instagram"] .polaroid:nth-of-type(1) { left: 0;   top: 40px; width: 36%; }
-[data-prints="instagram"] .polaroid:nth-of-type(2) { left: 30%; top: 60px; width: 40%; }
-[data-prints="instagram"] .polaroid:nth-of-type(3) { left: 64%; top: 30px; width: 36%; }
+/* Instagram: prints altos, lado a lado com leve sobreposição (o card cresce junto, nada vaza) */
+[data-prints="instagram"] { display: flex; align-items: flex-start; min-height: 0; padding-top: 34px; }
+[data-prints="instagram"] .polaroid { position: relative; left: auto !important; top: auto !important; flex: 0 0 38%; width: auto !important; }
+[data-prints="instagram"] .polaroid + .polaroid { margin-left: -7%; }
+[data-prints="instagram"] .polaroid:nth-of-type(2) { margin-top: 22px; }
+[data-prints="instagram"] .polaroid:nth-of-type(3) { margin-top: 6px; }
 
 @media (max-width: 1180px) {
   .mt-grid { grid-template-columns: 1fr; }
