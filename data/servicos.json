@@ -1,25 +1,9 @@
 {
-  "_como_usar": "Vídeo de exemplo de cada aba do seletor de serviços. Troque o caminho para outro vídeo quando quiser.",
+  "_como_usar": "Ordem dos cards da seção O que podemos criar juntos. O nome e a descrição de cada serviço ficam em i18n/pt.json e i18n/en.json (servicos.itens.<id>.nome e .desc).",
   "servicos": [
-    {
-      "id": "ugc",
-      "video": "videos/tech-so-promocoes.mp4",
-      "capa": "videos/capas/tech-so-promocoes.jpg"
-    },
-    {
-      "id": "publi",
-      "video": "videos/freegells.mp4",
-      "capa": "videos/capas/freegells.jpg"
-    },
-    {
-      "id": "clips",
-      "video": "videos/clips-roupao.mp4",
-      "capa": "videos/capas/clips-roupao.jpg"
-    },
-    {
-      "id": "tiktokshop",
-      "video": "videos/tiktokshop.mp4",
-      "capa": "videos/capas/tiktokshop.jpg"
-    }
+    { "id": "ugc" },
+    { "id": "publi" },
+    { "id": "clips" },
+    { "id": "tiktokshop" }
   ]
 }

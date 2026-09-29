@@ -58,6 +58,9 @@ button { font: inherit; color: inherit; }
 h1, h2, h3, p { margin: 0; }
 :focus-visible { outline: 2px solid var(--gold-dark); outline-offset: 3px; border-radius: 4px; }
 
+/* [hidden] sempre esconde, mesmo com display definido na classe (popup, player, lightbox) */
+[hidden] { display: none !important; }
+
 /* toda âncora compensa barra sazonal + menu */
 [id] { scroll-margin-top: var(--header-h); }
 #inicio { scroll-margin-top: 0; }
@@ -352,7 +355,7 @@ h1, h2, h3, p { margin: 0; }
 /* =========================================================
    MOVIMENTO REDUZIDO
    ========================================================= */
-html.reduce-motion { scroll-behavior: auto; }
-.reduce-motion *, .reduce-motion *::before, .reduce-motion *::after { transition-duration: 0s !important; transition-delay: 0s !important; animation-duration: 0s !important; animation-delay: 0s !important; }
-.reduce-motion .promo-track, .reduce-motion .marquee-track { animation: none; }
-.reduce-motion .promo-group + .promo-group { display: none; }
+/* reduzir movimento: desliga só efeitos de entrada (fade, traço desenhando).
+   Faixas, carrosséis e rolagem continuam funcionando. */
+.reduce-motion .reveal { opacity: 1 !important; transform: none !important; }
+.reduce-motion .hero-photo, .reduce-motion .hero-first, .reduce-motion .hero-last, .reduce-motion .anot, .reduce-motion .hero-shadow { transition: none !important; }

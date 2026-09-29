@@ -1,7 +1,7 @@
 /* =========================================================
-   7. O que podemos criar juntos? 4 cards (2 em cima, 2 embaixo)
-   cada card: objetivo (pergunta) + formato + explicação + tags + botão
-   "Quero esse formato" leva ao formulário com o serviço já escolhido
+   7. O que podemos criar juntos? 4 cards pequenos lado a lado
+   cada card: nome do serviço + descrição
+   "Bora conversar" leva ao formulário
    ========================================================= */
 (function () {
   let cards = [];
@@ -18,12 +18,8 @@
   function textos() {
     cards.forEach((c) => {
       const base = 'servicos.itens.' + c.id;
-      c.el.querySelector('.svc-pergunta').textContent = I18N.t(base + '.aba');
       c.el.querySelector('.svc-nome').textContent = I18N.t(base + '.nome');
       c.el.querySelector('.svc-desc').textContent = I18N.t(base + '.desc');
-      const tags = I18N.t(base + '.tags') || [];
-      c.el.querySelectorAll('.obj-tag').forEach((t, k) => { t.textContent = tags[k] || ''; });
-      c.el.querySelector('.svc-btn span').textContent = I18N.t('servicos.botao');
     });
   }
 
@@ -40,13 +36,7 @@
       num.textContent = String(i + 1).padStart(2, '0');
 
       const info = el('div', 'svc-info');
-      const tags = el('ul', 'obj-tags');
-      for (let k = 0; k < 3; k++) tags.appendChild(el('li', 'obj-tag'));
-      const btn = el('button', 'btn btn-gold svc-btn');
-      btn.type = 'button';
-      btn.append(el('span'));
-      btn.addEventListener('click', () => escolherServico(I18N.t('servicos.itens.' + s.id + '.form')));
-      info.append(num, el('h3', 'svc-pergunta'), el('p', 'svc-nome'), el('p', 'svc-desc'), tags, btn);
+      info.append(num, el('h3', 'svc-nome'), el('p', 'svc-desc'));
 
       card.append(info);
       root.appendChild(card);

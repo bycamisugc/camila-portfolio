@@ -1,5 +1,5 @@
 /* =========================================================
-   5. Galeria por nichos (data/nichos.json)
+   5. Galeria por nichos (data/nichos.json + data/videos.json)
    - menu de nichos com rolagem até cada bloco
    - 5 vídeos por fileira no desktop; setas quando há mais
    - clique abre o vídeo com som em tela cheia
@@ -20,9 +20,9 @@
 
   const capaDe = (v) => v.capa || (v.youtube ? `https://i.ytimg.com/vi/${v.youtube}/oar2.jpg` : '');
 
+  // etiqueta: FORMATO • TIPO (só o que estiver em data/videos.json)
   function tagTexto(v) {
-    const estilo = v.estilo ? I18N.pick(v.estilo) : '';
-    return estilo ? `${v.tipo} • ${estilo}` : v.tipo;
+    return [v.formato, v.tipo].filter((x) => x && String(x).trim()).join(' • ');
   }
 
   function card(v, nicho) {
@@ -122,6 +122,7 @@
 
     const row = el('div', 'nicho-row');
     n.videos.forEach((v) => row.appendChild(card(v, n.id)));
+    if (!n.videos.length) row.appendChild(card({ marca: I18N.pick(n.nome), pendente: true }, n.id));
     const passo = () => row.clientWidth * 0.8;
     prev.addEventListener('click', () => row.scrollBy({ left: -passo(), behavior: 'smooth' }));
     next.addEventListener('click', () => row.scrollBy({ left: passo(), behavior: 'smooth' }));
@@ -162,7 +163,8 @@
     btn.type = 'button';
     btn.setAttribute('aria-label', I18N.t('galeria.assistir', { marca: yt.marca }));
     const tag = el('span', 'vcard-tag yt-tag');
-    tag.append(el('b', '', yt.marca), el('span', 'vcard-tipo', yt.tipo));
+    tag.append(el('b', '', yt.marca));
+    if (tagTexto(yt)) tag.append(el('span', 'vcard-tipo', tagTexto(yt)));
     btn.addEventListener('click', () => {
       v.controls = true;
       v.play().catch(() => {});
@@ -176,7 +178,13 @@
   async function init() {
     const blocos = document.getElementById('nichoBlocos');
     if (!blocos) return;
-    try { data = await (await fetch('data/nichos.json', { cache: 'no-cache' })).json(); } catch (e) { return; }
+    try {
+      const [ni, vi] = await Promise.all(['data/nichos.json', 'data/videos.json'].map((u) => fetch(u, { cache: 'no-cache' }).then((r) => r.json())));
+      const conv = (v) => ({ marca: v.marca, formato: v.formato, tipo: v.tipo, video: v.arquivo || null, youtube: v.youtube || null, capa: v.capa || null });
+      data = { nichos: ni.nichos.map((n) => Object.assign({}, n, { videos: vi.videos.filter((v) => v.nicho === n.id).map(conv) })) };
+      const yt = vi.videos.find((v) => v.nicho === 'youtube-ads');
+      if (yt) data.youtubeAds = conv(yt);
+    } catch (e) { return; }
 
     const menu = document.getElementById('nichoMenu');
     data.nichos.forEach((n) => {

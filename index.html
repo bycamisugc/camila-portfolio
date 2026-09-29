@@ -281,8 +281,12 @@
       <h2 class="sec-title" data-i18n-html="depoimentos.titulo"></h2>
       <p class="depo-sub" data-i18n="depoimentos.sub"></p>
     </div>
-    <div class="marquee marquee-depo" id="depoMarquee">
-      <div class="marquee-track" id="depoTrack"></div>
+    <div class="depo-marquee" id="depoMarquee">
+      <div class="depo-track" id="depoTrack"></div>
+    </div>
+    <div class="depo-setas">
+      <button class="nicho-seta" type="button" data-depo-dir="-1" data-i18n-attr="aria-label:depoimentos.anterior"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+      <button class="nicho-seta" type="button" data-depo-dir="1" data-i18n-attr="aria-label:depoimentos.proximo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
     </div>
   </section>
 
@@ -295,38 +299,50 @@
         <p class="metricas-sub" data-i18n="metricas.sub"></p>
       </header>
 
-      <!-- bloco 1: TikTok Shop -->
-      <div class="mt-bloco" data-bloco="tiktok">
-        <div class="mt-numero">
-          <span class="mt-circulo" data-sketch="circle" data-sketch-seed="71" data-sketch-pad="26 20" data-sketch-width="2.4">
-            <span class="mt-count" data-count="tiktok">0</span>
-          </span>
-          <p class="mt-rotulo" data-i18n="metricas.tiktokRotulo"></p>
-          <p class="mt-nota" data-i18n="metricas.tiktokNota"></p>
-          <span class="hand mt-anot mt-anot-2" style="--rot:-6deg" data-i18n="metricas.anot2"></span>
-        </div>
-        <div class="mt-prints" data-prints="tiktok">
-          <div class="hand mt-anot mt-anot-1" style="--rot:4deg">
-            <span data-i18n="metricas.anot1"></span>
-            <span class="mt-seta" data-sketch="arrow" data-sketch-seed="72" data-sketch-delay="500" data-sketch-arrow="0.1 0.1 0.85 0.9 0.35"></span>
+      <div class="mt-grid">
+        <!-- bloco 1: TikTok Shop -->
+        <article class="mt-card reveal" data-bloco="tiktok">
+          <header class="mt-rede">
+            <svg class="mt-ico" viewBox="0 0 32 32" aria-hidden="true"><path d="M17.2 4.6c.1 5.5-.1 11.1-.3 16.6 0 2.6-2.2 4.6-4.8 4.5-2.5-.1-4.5-2.2-4.3-4.8.1-2.5 2.3-4.4 4.8-4.2"/><path d="M17.3 5c.6 3.4 3.1 5.8 6.7 6.1"/></svg>
+            <h3 class="mt-rede-nome">TikTok Shop</h3>
+            <a class="mt-perfil" href="https://tiktok.com/@bycamisugc_" target="_blank" rel="noopener">@bycamisugc_ <span aria-hidden="true">↗</span></a>
+          </header>
+          <div class="mt-numero">
+            <span class="mt-circulo" data-sketch="circle" data-sketch-seed="71" data-sketch-pad="18 14" data-sketch-width="2.2">
+              <span class="mt-count" data-count="tiktok">0</span>
+            </span>
+            <span class="hand mt-anot mt-anot-2" style="--rot:-6deg" data-i18n="metricas.anot2"></span>
+            <p class="mt-rotulo" data-i18n="metricas.tiktokRotulo"></p>
+            <p class="mt-nota" data-i18n="metricas.tiktokNota"></p>
           </div>
-        </div>
-      </div>
+          <div class="mt-prints" data-prints="tiktok">
+            <div class="hand mt-anot mt-anot-1" style="--rot:3deg">
+              <span data-i18n="metricas.anot1"></span>
+              <span class="mt-seta" data-sketch="arrow" data-sketch-seed="72" data-sketch-delay="500" data-sketch-arrow="0.1 0.1 0.85 0.9 0.35"></span>
+            </div>
+          </div>
+        </article>
 
-      <!-- bloco 2: Instagram (espelhado) -->
-      <div class="mt-bloco mt-bloco-espelho" data-bloco="instagram">
-        <div class="mt-numero">
-          <span class="mt-count" data-count="instagram">0</span>
-          <p class="mt-rotulo" data-i18n="metricas.igRotulo"></p>
-          <p class="mt-nota"><span data-sketch="underline" data-sketch-seed="73" data-sketch-delay="400"><span data-i18n="metricas.igNota"></span></span></p>
-          <span class="hand mt-anot mt-anot-4" style="--rot:5deg" data-i18n="metricas.anot4"></span>
-        </div>
-        <div class="mt-prints" data-prints="instagram">
-          <div class="hand mt-anot mt-anot-3" style="--rot:-4deg">
-            <span class="mt-seta" data-sketch="arrow" data-sketch-seed="74" data-sketch-delay="500" data-sketch-arrow="0.9 0.1 0.15 0.9 -0.35"></span>
-            <span data-i18n="metricas.anot3"></span>
+        <!-- bloco 2: Instagram -->
+        <article class="mt-card reveal" data-bloco="instagram">
+          <header class="mt-rede">
+            <svg class="mt-ico" viewBox="0 0 32 32" aria-hidden="true"><path d="M9.5 4.8c4.4-.4 8.8-.4 13.1.1 2.6.3 4.3 2.1 4.5 4.7.4 4.3.4 8.6-.1 12.9-.3 2.6-2.1 4.3-4.7 4.5-4.3.4-8.6.4-12.9-.1-2.6-.3-4.3-2.1-4.5-4.7-.4-4.3-.3-8.6.1-12.9.3-2.5 2-4.3 4.5-4.5z"/><path d="M16 11.2c2.8-.1 5 2 5 4.7.1 2.8-2 5-4.8 5.1-2.7 0-4.9-2.1-5-4.8 0-2.7 2.1-4.9 4.8-5z"/><path d="M22.6 8.9l.2.1"/></svg>
+            <h3 class="mt-rede-nome">Instagram</h3>
+            <a class="mt-perfil" href="https://instagram.com/bycamisugc" target="_blank" rel="noopener">@bycamisugc <span aria-hidden="true">↗</span></a>
+          </header>
+          <div class="mt-numero">
+            <span class="mt-count" data-count="instagram">0</span>
+            <span class="hand mt-anot mt-anot-4" style="--rot:5deg" data-i18n="metricas.anot4"></span>
+            <p class="mt-rotulo" data-i18n="metricas.igRotulo"></p>
+            <p class="mt-nota"><span data-sketch="underline" data-sketch-seed="73" data-sketch-delay="400"><span data-i18n="metricas.igNota"></span></span></p>
           </div>
-        </div>
+          <div class="mt-prints" data-prints="instagram">
+            <div class="hand mt-anot mt-anot-3" style="--rot:-3deg">
+              <span data-i18n="metricas.anot3"></span>
+              <span class="mt-seta" data-sketch="arrow" data-sketch-seed="74" data-sketch-delay="500" data-sketch-arrow="0.1 0.1 0.85 0.9 0.35"></span>
+            </div>
+          </div>
+        </article>
       </div>
     </div>
   </section>

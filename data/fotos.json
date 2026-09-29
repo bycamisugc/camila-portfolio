@@ -1,145 +1,185 @@
 {
-  "_como_usar": "Fotos do moodboard na ordem de exibição (20 posições no desktop). Para trocar, substitua o arquivo em fotos/ ou mude o caminho. Use pendente:true para um espaço reservado.",
+  "_como_usar": "Fotos do moodboard (as mesmas da pasta Fotos). As fotos aparecem inteiras, sem corte, na proporção original. Para trocar, substitua o arquivo em fotos/ ou mude o caminho.",
   "fotos": [
     {
       "arquivo": "fotos/foto-01.jpg",
       "alt": {
-        "pt": "Camila segurando produtos de limpeza perfumada",
-        "en": "Camila holding scented cleaning products"
-      }
+        "pt": "Camila mostrando o app da OLX no celular",
+        "en": "Camila showing the OLX app on her phone"
+      },
+      "largura": 1018,
+      "altura": 1400
     },
     {
       "arquivo": "fotos/foto-02.jpg",
       "alt": {
-        "pt": "Camila com produtos Orquídea Negra",
-        "en": "Camila with Orquídea Negra products"
-      }
+        "pt": "Camila no carro com uma caixa cheia de Freegells",
+        "en": "Camila in the car with a box full of Freegells"
+      },
+      "largura": 809,
+      "altura": 1400
     },
     {
       "arquivo": "fotos/foto-03.jpg",
       "alt": {
-        "pt": "Camila mostrando o app da OLX no celular",
-        "en": "Camila showing the OLX app on her phone"
-      }
+        "pt": "Camila mostrando um protetor solar",
+        "en": "Camila showing a sunscreen"
+      },
+      "largura": 791,
+      "altura": 1400
     },
     {
       "arquivo": "fotos/foto-04.jpg",
       "alt": {
-        "pt": "Camila em foto publicitária de roupa modeladora",
-        "en": "Camila in a shapewear ad shot"
-      }
+        "pt": "Camila segurando produtos de limpeza perfumada",
+        "en": "Camila holding scented cleaning products"
+      },
+      "largura": 803,
+      "altura": 1400
     },
     {
       "arquivo": "fotos/foto-05.jpg",
       "alt": {
-        "pt": "Camila sorrindo com suplementos",
-        "en": "Camila smiling with supplements"
-      }
+        "pt": "Camila limpando o fogão com produtos Coperalcool",
+        "en": "Camila cleaning the stove with Coperalcool products"
+      },
+      "largura": 808,
+      "altura": 1400
     },
     {
       "arquivo": "fotos/foto-06.jpg",
       "alt": {
-        "pt": "Camila na cozinha de casa",
-        "en": "Camila in her kitchen"
-      }
+        "pt": "Camila com um borrifador de Chá Branco",
+        "en": "Camila with a White Tea room spray"
+      },
+      "largura": 1014,
+      "altura": 1400
     },
     {
       "arquivo": "fotos/foto-07.jpg",
       "alt": {
-        "pt": "Camila com a caixa de uma torneira gourmet",
-        "en": "Camila holding a kitchen faucet box"
-      }
+        "pt": "Camila com produtos Orquídea Negra",
+        "en": "Camila with Orquídea Negra products"
+      },
+      "largura": 1035,
+      "altura": 1400
     },
     {
       "arquivo": "fotos/foto-08.jpg",
       "alt": {
-        "pt": "Camila ao ar livre, em frente ao carro",
-        "en": "Camila outdoors in front of a car"
-      }
+        "pt": "Camila com a filha no colo ao lado de um berço",
+        "en": "Camila holding her daughter next to a crib"
+      },
+      "largura": 808,
+      "altura": 1400
     },
     {
       "arquivo": "fotos/foto-09.jpg",
       "alt": {
-        "pt": "Camila na sala de casa",
-        "en": "Camila in her living room"
-      }
+        "pt": "Camila em foto publicitária de roupa modeladora",
+        "en": "Camila in a shapewear ad shot"
+      },
+      "largura": 978,
+      "altura": 1400
     },
     {
       "arquivo": "fotos/foto-10.jpg",
       "alt": {
-        "pt": "Camila fazendo selfie no espelho",
-        "en": "Camila taking a mirror selfie"
-      }
+        "pt": "Camila sentindo o aroma de produtos de cuidado",
+        "en": "Camila smelling self-care products"
+      },
+      "largura": 787,
+      "altura": 1400
     },
     {
       "arquivo": "fotos/foto-11.jpg",
       "alt": {
-        "pt": "Selfie espontânea da Camila",
-        "en": "Candid selfie of Camila"
-      }
+        "pt": "Camila abrindo uma caixa de produtos",
+        "en": "Camila unboxing a product kit"
+      },
+      "largura": 802,
+      "altura": 1400
     },
     {
       "arquivo": "fotos/foto-12.jpg",
       "alt": {
-        "pt": "Camila rindo em fundo claro",
-        "en": "Camila laughing against a light background"
-      }
+        "pt": "Camila gravando com microfone e celular",
+        "en": "Camila recording with a microphone and her phone"
+      },
+      "largura": 1050,
+      "altura": 1400
     },
     {
       "arquivo": "fotos/foto-13.jpg",
       "alt": {
-        "pt": "Camila cozinhando com a filha",
-        "en": "Camila cooking with her daughter"
-      }
+        "pt": "Camila com um pote de gomas",
+        "en": "Camila with a jar of gummies"
+      },
+      "largura": 1050,
+      "altura": 1400
     },
     {
       "arquivo": "fotos/foto-14.jpg",
       "alt": {
-        "pt": "Camila aplicando sérum facial",
-        "en": "Camila applying a face serum"
-      }
+        "pt": "Camila sorrindo com suplementos",
+        "en": "Camila smiling with supplements"
+      },
+      "largura": 810,
+      "altura": 1400
     },
     {
       "arquivo": "fotos/foto-15.jpg",
       "alt": {
-        "pt": "Camila com Rap10",
-        "en": "Camila with Rap10"
-      }
+        "pt": "Camila com a caixa de uma torneira gourmet",
+        "en": "Camila holding a kitchen faucet box"
+      },
+      "largura": 807,
+      "altura": 1400
     },
     {
       "arquivo": "fotos/foto-16.jpg",
       "alt": {
-        "pt": "Camila no carro com uma caixa cheia de Freegells",
-        "en": "Camila in the car with a box full of Freegells"
-      }
+        "pt": "Camila na sala de casa",
+        "en": "Camila in her living room"
+      },
+      "largura": 791,
+      "altura": 1400
     },
     {
       "arquivo": "fotos/foto-17.jpg",
       "alt": {
-        "pt": "Camila mostrando um protetor solar",
-        "en": "Camila showing a sunscreen"
-      }
+        "pt": "Camila cozinhando com a filha",
+        "en": "Camila cooking with her daughter"
+      },
+      "largura": 1170,
+      "altura": 1246
     },
     {
       "arquivo": "fotos/foto-18.jpg",
       "alt": {
-        "pt": "Camila com a filha no colo ao lado de um berço",
-        "en": "Camila holding her daughter next to a crib"
-      }
+        "pt": "Camila aplicando sérum facial",
+        "en": "Camila applying a face serum"
+      },
+      "largura": 804,
+      "altura": 1400
     },
     {
       "arquivo": "fotos/foto-19.jpg",
       "alt": {
-        "pt": "Camila abrindo uma caixa de produtos",
-        "en": "Camila unboxing a product kit"
-      }
+        "pt": "Camila com Rap10",
+        "en": "Camila with Rap10"
+      },
+      "largura": 1015,
+      "altura": 1400
     },
     {
       "arquivo": "fotos/foto-20.jpg",
       "alt": {
-        "pt": "Camila com um pote de gomas",
-        "en": "Camila with a jar of gummies"
-      }
+        "pt": "Camila com produtos Coperalcool",
+        "en": "Camila with Coperalcool products"
+      },
+      "largura": 810,
+      "altura": 1400
     }
   ]
 }

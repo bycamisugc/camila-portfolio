@@ -1,0 +1,518 @@
+{
+  "_como_usar": "Todos os vídeos da galeria. Campos: arquivo (vídeo no site) OU youtube (id do YouTube), capa, nicho (casa, tech, viagem, limpeza, pet, moda, beleza, gastronomia, auto, ferramentas, extras, clips, youtube-ads), marca, formato (UGC, Publi, Clips ou TikTok Shop) e tipo (ex.: Storytelling, Ads, Review, Demonstração, Lifestyle, Unboxing, Tutorial). A etiqueta do vídeo mostra FORMATO • TIPO; tipo em branco não aparece. A ordem aqui é a ordem na galeria.",
+  "videos": [
+    {
+      "arquivo": "videos/casa-inducol.mp4",
+      "youtube": "",
+      "capa": "videos/capas/casa-inducol.jpg",
+      "nicho": "casa",
+      "marca": "Inducol",
+      "formato": "UGC",
+      "tipo": ""
+    },
+    {
+      "arquivo": "videos/casa-porto-brasil.mp4",
+      "youtube": "",
+      "capa": "videos/capas/casa-porto-brasil.jpg",
+      "nicho": "casa",
+      "marca": "Porto Brasil",
+      "formato": "UGC",
+      "tipo": ""
+    },
+    {
+      "arquivo": "videos/casa-valley.mp4",
+      "youtube": "",
+      "capa": "videos/capas/casa-valley.jpg",
+      "nicho": "casa",
+      "marca": "Valley",
+      "formato": "UGC",
+      "tipo": ""
+    },
+    {
+      "arquivo": "videos/casa-on-moveis.mp4",
+      "youtube": "",
+      "capa": "videos/capas/casa-on-moveis.jpg",
+      "nicho": "casa",
+      "marca": "On Móveis",
+      "formato": "UGC",
+      "tipo": ""
+    },
+    {
+      "arquivo": "videos/casa-aize.mp4",
+      "youtube": "",
+      "capa": "videos/capas/casa-aize.jpg",
+      "nicho": "casa",
+      "marca": "Aize",
+      "formato": "UGC",
+      "tipo": ""
+    },
+    {
+      "arquivo": "videos/tech-bora-trocar.mp4",
+      "youtube": "",
+      "capa": "videos/capas/tech-bora-trocar.jpg",
+      "nicho": "tech",
+      "marca": "Bora Trocar",
+      "formato": "UGC",
+      "tipo": ""
+    },
+    {
+      "arquivo": "videos/tech-canva.mp4",
+      "youtube": "",
+      "capa": "videos/capas/tech-canva.jpg",
+      "nicho": "tech",
+      "marca": "Canva",
+      "formato": "UGC",
+      "tipo": ""
+    },
+    {
+      "arquivo": "",
+      "youtube": "Ba9h0ByTnFM",
+      "capa": "",
+      "nicho": "tech",
+      "marca": "Méliuz",
+      "formato": "UGC",
+      "tipo": ""
+    },
+    {
+      "arquivo": "",
+      "youtube": "xjg-cJPEJsg",
+      "capa": "",
+      "nicho": "tech",
+      "marca": "Perplexity",
+      "formato": "UGC",
+      "tipo": ""
+    },
+    {
+      "arquivo": "",
+      "youtube": "a96VSBQwxgU",
+      "capa": "",
+      "nicho": "tech",
+      "marca": "Rei da Promo",
+      "formato": "UGC",
+      "tipo": ""
+    },
+    {
+      "arquivo": "videos/tech-passageiro-de-primeira.mp4",
+      "youtube": "",
+      "capa": "videos/capas/tech-passageiro-de-primeira.jpg",
+      "nicho": "tech",
+      "marca": "Passageiro de Primeira",
+      "formato": "UGC",
+      "tipo": ""
+    },
+    {
+      "arquivo": "videos/tech-so-promocoes.mp4",
+      "youtube": "",
+      "capa": "videos/capas/tech-so-promocoes.jpg",
+      "nicho": "tech",
+      "marca": "Só Promoções do Dia",
+      "formato": "UGC",
+      "tipo": ""
+    },
+    {
+      "arquivo": "videos/airbnb.mp4",
+      "youtube": "",
+      "capa": "videos/capas/airbnb.jpg",
+      "nicho": "viagem",
+      "marca": "Airbnb",
+      "formato": "UGC",
+      "tipo": ""
+    },
+    {
+      "arquivo": "videos/limpeza-coala.mp4",
+      "youtube": "",
+      "capa": "videos/capas/limpeza-coala.jpg",
+      "nicho": "limpeza",
+      "marca": "Coala",
+      "formato": "UGC",
+      "tipo": ""
+    },
+    {
+      "arquivo": "videos/limpeza-duratto.mp4",
+      "youtube": "",
+      "capa": "videos/capas/limpeza-duratto.jpg",
+      "nicho": "limpeza",
+      "marca": "Duratto",
+      "formato": "UGC",
+      "tipo": ""
+    },
+    {
+      "arquivo": "videos/limpeza-vinagreen.mp4",
+      "youtube": "",
+      "capa": "videos/capas/limpeza-vinagreen.jpg",
+      "nicho": "limpeza",
+      "marca": "Vinagreen",
+      "formato": "UGC",
+      "tipo": ""
+    },
+    {
+      "arquivo": "videos/limpeza-coperalcool.mp4",
+      "youtube": "",
+      "capa": "videos/capas/limpeza-coperalcool.jpg",
+      "nicho": "limpeza",
+      "marca": "Coperalcool",
+      "formato": "UGC",
+      "tipo": ""
+    },
+    {
+      "arquivo": "videos/pet-wigow-1.mp4",
+      "youtube": "",
+      "capa": "videos/capas/pet-wigow-1.jpg",
+      "nicho": "pet",
+      "marca": "Wigow",
+      "formato": "UGC",
+      "tipo": ""
+    },
+    {
+      "arquivo": "videos/pet-wigow-2.mp4",
+      "youtube": "",
+      "capa": "videos/capas/pet-wigow-2.jpg",
+      "nicho": "pet",
+      "marca": "Wigow",
+      "formato": "UGC",
+      "tipo": ""
+    },
+    {
+      "arquivo": "videos/pet-petskin-1.mp4",
+      "youtube": "",
+      "capa": "videos/capas/pet-petskin-1.jpg",
+      "nicho": "pet",
+      "marca": "Petskin",
+      "formato": "UGC",
+      "tipo": ""
+    },
+    {
+      "arquivo": "videos/pet-petskin-2.mp4",
+      "youtube": "",
+      "capa": "videos/capas/pet-petskin-2.jpg",
+      "nicho": "pet",
+      "marca": "Petskin",
+      "formato": "UGC",
+      "tipo": ""
+    },
+    {
+      "arquivo": "videos/pet-petskin-3.mp4",
+      "youtube": "",
+      "capa": "videos/capas/pet-petskin-3.jpg",
+      "nicho": "pet",
+      "marca": "Petskin",
+      "formato": "UGC",
+      "tipo": ""
+    },
+    {
+      "arquivo": "videos/pet-petskin-4.mp4",
+      "youtube": "",
+      "capa": "videos/capas/pet-petskin-4.jpg",
+      "nicho": "pet",
+      "marca": "Petskin",
+      "formato": "UGC",
+      "tipo": ""
+    },
+    {
+      "arquivo": "videos/moda-midas-time-1.mp4",
+      "youtube": "",
+      "capa": "videos/capas/moda-midas-time-1.jpg",
+      "nicho": "moda",
+      "marca": "Midas Time",
+      "formato": "UGC",
+      "tipo": ""
+    },
+    {
+      "arquivo": "videos/moda-midas-time-2.mp4",
+      "youtube": "",
+      "capa": "videos/capas/moda-midas-time-2.jpg",
+      "nicho": "moda",
+      "marca": "Midas Time",
+      "formato": "UGC",
+      "tipo": ""
+    },
+    {
+      "arquivo": "videos/moda-upper-1.mp4",
+      "youtube": "",
+      "capa": "videos/capas/moda-upper-1.jpg",
+      "nicho": "moda",
+      "marca": "Upper",
+      "formato": "UGC",
+      "tipo": ""
+    },
+    {
+      "arquivo": "videos/moda-upper-2.mp4",
+      "youtube": "",
+      "capa": "videos/capas/moda-upper-2.jpg",
+      "nicho": "moda",
+      "marca": "Upper",
+      "formato": "UGC",
+      "tipo": ""
+    },
+    {
+      "arquivo": "",
+      "youtube": "BEpV1ZbiNVU",
+      "capa": "",
+      "nicho": "beleza",
+      "marca": "Marcia Cosméticos",
+      "formato": "UGC",
+      "tipo": ""
+    },
+    {
+      "arquivo": "",
+      "youtube": "8qSMnA3Yhgc",
+      "capa": "",
+      "nicho": "beleza",
+      "marca": "Raavi",
+      "formato": "UGC",
+      "tipo": ""
+    },
+    {
+      "arquivo": "",
+      "youtube": "uYoT7Fbpm_c",
+      "capa": "",
+      "nicho": "beleza",
+      "marca": "Wellife",
+      "formato": "UGC",
+      "tipo": ""
+    },
+    {
+      "arquivo": "",
+      "youtube": "1z4zan43yyo",
+      "capa": "",
+      "nicho": "beleza",
+      "marca": "Wellife",
+      "formato": "UGC",
+      "tipo": ""
+    },
+    {
+      "arquivo": "",
+      "youtube": "YmA3gkWBzcs",
+      "capa": "",
+      "nicho": "beleza",
+      "marca": "Wellife",
+      "formato": "UGC",
+      "tipo": ""
+    },
+    {
+      "arquivo": "videos/beleza-hidracce.mp4",
+      "youtube": "",
+      "capa": "videos/capas/beleza-hidracce.jpg",
+      "nicho": "beleza",
+      "marca": "Hidracce",
+      "formato": "UGC",
+      "tipo": ""
+    },
+    {
+      "arquivo": "videos/beleza-irene-ri.mp4",
+      "youtube": "",
+      "capa": "videos/capas/beleza-irene-ri.jpg",
+      "nicho": "beleza",
+      "marca": "Irene Rí",
+      "formato": "UGC",
+      "tipo": ""
+    },
+    {
+      "arquivo": "videos/gastronomia-valle-branco-1.mp4",
+      "youtube": "",
+      "capa": "videos/capas/gastronomia-valle-branco-1.jpg",
+      "nicho": "gastronomia",
+      "marca": "Valle Branco",
+      "formato": "UGC",
+      "tipo": ""
+    },
+    {
+      "arquivo": "videos/gastronomia-valle-branco-2.mp4",
+      "youtube": "",
+      "capa": "videos/capas/gastronomia-valle-branco-2.jpg",
+      "nicho": "gastronomia",
+      "marca": "Valle Branco",
+      "formato": "UGC",
+      "tipo": ""
+    },
+    {
+      "arquivo": "videos/gastronomia-rap10.mp4",
+      "youtube": "",
+      "capa": "videos/capas/gastronomia-rap10.jpg",
+      "nicho": "gastronomia",
+      "marca": "Rap10",
+      "formato": "UGC",
+      "tipo": ""
+    },
+    {
+      "arquivo": "videos/gastronomia-fleishman.mp4",
+      "youtube": "",
+      "capa": "videos/capas/gastronomia-fleishman.jpg",
+      "nicho": "gastronomia",
+      "marca": "Fleischmann",
+      "formato": "UGC",
+      "tipo": ""
+    },
+    {
+      "arquivo": "",
+      "youtube": "Ps1OHm1putE",
+      "capa": "",
+      "nicho": "auto",
+      "marca": "OLX",
+      "formato": "UGC",
+      "tipo": ""
+    },
+    {
+      "arquivo": "",
+      "youtube": "tp6npTetwZ8",
+      "capa": "",
+      "nicho": "auto",
+      "marca": "Motor Consulta",
+      "formato": "UGC",
+      "tipo": ""
+    },
+    {
+      "arquivo": "",
+      "youtube": "sCcLxK20n7Y",
+      "capa": "",
+      "nicho": "auto",
+      "marca": "OLX",
+      "formato": "UGC",
+      "tipo": ""
+    },
+    {
+      "arquivo": "",
+      "youtube": "hK4UT_s1gqo",
+      "capa": "",
+      "nicho": "auto",
+      "marca": "OLX",
+      "formato": "UGC",
+      "tipo": ""
+    },
+    {
+      "arquivo": "videos/ferramentas-menegotti-1.mp4",
+      "youtube": "",
+      "capa": "videos/capas/ferramentas-menegotti-1.jpg",
+      "nicho": "ferramentas",
+      "marca": "Menegotti",
+      "formato": "UGC",
+      "tipo": ""
+    },
+    {
+      "arquivo": "videos/ferramentas-menegotti-2.mp4",
+      "youtube": "",
+      "capa": "videos/capas/ferramentas-menegotti-2.jpg",
+      "nicho": "ferramentas",
+      "marca": "Menegotti",
+      "formato": "UGC",
+      "tipo": ""
+    },
+    {
+      "arquivo": "videos/ferramentas-menegotti-3.mp4",
+      "youtube": "",
+      "capa": "videos/capas/ferramentas-menegotti-3.jpg",
+      "nicho": "ferramentas",
+      "marca": "Menegotti",
+      "formato": "UGC",
+      "tipo": ""
+    },
+    {
+      "arquivo": "videos/ferramentas-mixtou.mp4",
+      "youtube": "",
+      "capa": "videos/capas/ferramentas-mixtou.jpg",
+      "nicho": "ferramentas",
+      "marca": "Mixtou",
+      "formato": "UGC",
+      "tipo": ""
+    },
+    {
+      "arquivo": "videos/extras-litet-berco.mp4",
+      "youtube": "",
+      "capa": "videos/capas/extras-litet-berco.jpg",
+      "nicho": "extras",
+      "marca": "Litet",
+      "formato": "UGC",
+      "tipo": ""
+    },
+    {
+      "arquivo": "videos/extras-litet-cadeirinha.mp4",
+      "youtube": "",
+      "capa": "videos/capas/extras-litet-cadeirinha.jpg",
+      "nicho": "extras",
+      "marca": "Litet",
+      "formato": "UGC",
+      "tipo": ""
+    },
+    {
+      "arquivo": "videos/extras-bic-lapis-de-cor.mp4",
+      "youtube": "",
+      "capa": "videos/capas/extras-bic-lapis-de-cor.jpg",
+      "nicho": "extras",
+      "marca": "BIC",
+      "formato": "UGC",
+      "tipo": ""
+    },
+    {
+      "arquivo": "videos/extras-bic-lamina.mp4",
+      "youtube": "",
+      "capa": "videos/capas/extras-bic-lamina.jpg",
+      "nicho": "extras",
+      "marca": "BIC",
+      "formato": "UGC",
+      "tipo": ""
+    },
+    {
+      "arquivo": "videos/extras-mixtou-pilhas.mp4",
+      "youtube": "",
+      "capa": "videos/capas/extras-mixtou-pilhas.jpg",
+      "nicho": "extras",
+      "marca": "Mixtou",
+      "formato": "UGC",
+      "tipo": ""
+    },
+    {
+      "arquivo": "videos/clips-roupao.mp4",
+      "youtube": "",
+      "capa": "videos/capas/clips-roupao.jpg",
+      "nicho": "clips",
+      "marca": "Roupão",
+      "formato": "Clips",
+      "tipo": ""
+    },
+    {
+      "arquivo": "videos/clips-maio-marrakesh.mp4",
+      "youtube": "",
+      "capa": "videos/capas/clips-maio-marrakesh.jpg",
+      "nicho": "clips",
+      "marca": "Maiô Marrakesh",
+      "formato": "Clips",
+      "tipo": ""
+    },
+    {
+      "arquivo": "videos/clips-painel-ripado-eva.mp4",
+      "youtube": "",
+      "capa": "videos/capas/clips-painel-ripado-eva.jpg",
+      "nicho": "clips",
+      "marca": "Painel Ripado EVA",
+      "formato": "Clips",
+      "tipo": ""
+    },
+    {
+      "arquivo": "videos/clips-copa.mp4",
+      "youtube": "",
+      "capa": "videos/capas/clips-copa.jpg",
+      "nicho": "clips",
+      "marca": "Sofá Modular Copa",
+      "formato": "Clips",
+      "tipo": ""
+    },
+    {
+      "arquivo": "videos/clips-upper.mp4",
+      "youtube": "",
+      "capa": "videos/capas/clips-upper.jpg",
+      "nicho": "clips",
+      "marca": "Upper",
+      "formato": "Clips",
+      "tipo": ""
+    },
+    {
+      "arquivo": "videos/youtube-perplexity.mp4",
+      "youtube": "",
+      "capa": "videos/capas/youtube-perplexity.jpg",
+      "nicho": "youtube-ads",
+      "marca": "Perplexity",
+      "formato": "UGC",
+      "tipo": ""
+    }
+  ]
+}

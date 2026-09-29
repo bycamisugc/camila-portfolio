@@ -170,7 +170,9 @@
   },
   "depoimentos": {
     "titulo": "What they say about the <em>work</em>",
-    "sub": "Feedback from brands that have created with me."
+    "sub": "Feedback from brands that have created with me.",
+    "anterior": "Previous testimonial",
+    "proximo": "Next testimonial"
   },
   "metricas": {
     "eyebrow": "Metrics",

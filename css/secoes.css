@@ -82,11 +82,9 @@ html.no-scroll { overflow: hidden; }
   max-height: var(--logo-h);
   max-width: 140px;
   object-fit: contain;
-  filter: grayscale(1);
-  opacity: .6;
-  transition: filter .35s ease, opacity .35s ease;
+  transition: transform .35s var(--ease-out);
 }
-.marquee-list li:hover img { filter: none; opacity: 1; }
+.marquee-list li:hover img { transform: scale(1.08); }
 
 @media (max-width: 899px) {
   .marcas { padding: 26px 0 30px; }

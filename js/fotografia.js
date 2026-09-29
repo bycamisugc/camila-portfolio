@@ -33,6 +33,8 @@
       b.className = 'mb-item reveal';
       const img = document.createElement('img');
       img.src = f.arquivo;
+      // tamanho fixo antes de carregar: a página não "pula" enquanto as fotos chegam
+      if (f.largura && f.altura) { img.width = f.largura; img.height = f.altura; }
       img.loading = 'lazy';
       img.decoding = 'async';
       const num = document.createElement('span');
