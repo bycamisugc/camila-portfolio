@@ -72,7 +72,6 @@
   },
   "skills": {
     "eyebrow": "Habilidades",
-    "nota": "aula de hoje:",
     "soft": "Soft skills",
     "hard": "Hard skills",
     "softList": [
@@ -94,7 +93,8 @@
       "Conteúdo orgânico",
       "Conteúdo focado em conversão",
       "Live Shopper"
-    ]
+    ],
+    "fotoAlt": "Camila Galinari sorrindo e abraçando pacotes de produtos"
   },
   "galeria": {
     "eyebrow": "Galeria de vídeos",
