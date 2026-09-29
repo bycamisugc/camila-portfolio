@@ -1,5 +1,5 @@
 {
-  "_como_usar": "Todos os vídeos da galeria. Campos: arquivo (vídeo no site) OU youtube (id do YouTube), capa, nicho (casa, tech, viagem, limpeza, pet, moda, beleza, gastronomia, auto, ferramentas, extras, clips, youtube-ads), marca, formato (UGC, Publi, Clips ou TikTok Shop) e tipo (ex.: Storytelling, Ads, Review, Demonstração, Lifestyle, Unboxing, Tutorial). A etiqueta do vídeo mostra FORMATO • TIPO; tipo em branco não aparece. A ordem aqui é a ordem na galeria.",
+  "_como_usar": "Todos os vídeos da galeria. Campos: arquivo (vídeo no site) OU youtube (id do YouTube), capa, nicho (casa, tech, limpeza, pet, moda, beleza, gastronomia, auto, ferramentas, extras, clips, youtube-ads), marca, formato (UGC, Publi, Clips ou TikTok Shop) e tipo (ex.: Storytelling, Ads, Review, Demonstração, Lifestyle, Unboxing, Tutorial). A etiqueta do vídeo mostra FORMATO • TIPO; tipo em branco não aparece. A ordem aqui é a ordem na galeria.",
   "videos": [
     {
       "arquivo": "videos/casa-inducol.mp4",
@@ -88,15 +88,6 @@
       "capa": "videos/capas/tech-so-promocoes.jpg",
       "nicho": "tech",
       "marca": "Só Promoções do Dia",
-      "formato": "UGC",
-      "tipo": ""
-    },
-    {
-      "arquivo": "videos/airbnb.mp4",
-      "youtube": "",
-      "capa": "videos/capas/airbnb.jpg",
-      "nicho": "viagem",
-      "marca": "Airbnb",
       "formato": "UGC",
       "tipo": ""
     },

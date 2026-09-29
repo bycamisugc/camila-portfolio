@@ -24,17 +24,6 @@
       }
     },
     {
-      "id": "viagem",
-      "nome": {
-        "pt": "Viagem",
-        "en": "Travel"
-      },
-      "sub": {
-        "pt": "Estadias e destinos que dão vontade de reservar.",
-        "en": "Stays and places that make you want to book."
-      }
-    },
-    {
       "id": "limpeza",
       "nome": {
         "pt": "Limpeza & Organização",
