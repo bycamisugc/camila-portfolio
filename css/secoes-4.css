@@ -1,10 +1,18 @@
 /* =========================================================
    4. SKILLS: soft skills | foto | hard skills
    ========================================================= */
-.skills { padding: var(--espaco-secao) 0; background: var(--bg); }
+/* a seção inteira cabe numa tela no desktop: 100vh menos barra sazonal + menu */
+.skills {
+  padding: var(--espaco-secao) 0;
+  background: var(--bg);
+  max-height: calc(100vh - var(--header-h));
+  max-height: calc(100svh - var(--header-h));
+  display: flex;
+  align-items: center;
+}
 .skills-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 30% minmax(0, 1fr);
+  grid-template-columns: 1fr auto 1fr;
   gap: clamp(24px, 3.5vw, 56px);
   align-items: center;
 }
@@ -17,21 +25,21 @@
   font-family: var(--f-display);
   font-weight: 800;
   font-variation-settings: "opsz" 144;
-  font-size: clamp(30px, 3vw, 46px);
+  font-size: clamp(26px, min(2.4vw, 4.6vh), 40px);
   line-height: 1;
   letter-spacing: -.02em;
   text-transform: uppercase;
-  margin-bottom: 26px;
+  margin-bottom: clamp(12px, 2vh, 20px);
 }
 .skills-title .sketch-host { padding: 0 .1em; }
-.skills-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 14px; }
+.skills-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: clamp(4px, 1vh, 10px); }
 .skills-soft .skills-list { align-items: flex-end; }
 .skills-hard .skills-list { align-items: flex-start; }
 .skills-list li {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  font-size: clamp(21px, 1.9vw, 28px);
+  font-size: clamp(20px, min(1.7vw, 3.3vh), 26px);
   font-weight: 600;
   line-height: 1.15;
   transform-origin: center;
@@ -49,11 +57,13 @@
 }
 .skills-foto.reveal { transform: rotate(-3deg) translateY(24px); }
 .skills-foto.reveal.is-visible { transform: rotate(-3deg); }
+/* tamanho pela ALTURA: até 60vh (com a moldura) e no máximo 320px de largura */
 .skills-foto img {
   display: block;
-  width: 100%;
+  height: min(calc(60vh - 56px), 370px);
+  width: auto;
+  max-width: 296px;
   aspect-ratio: 4 / 5;
-  height: auto;
   object-fit: cover;
   object-position: 47% 28%;   /* rosto centralizado */
 }
@@ -61,7 +71,9 @@
 
 @media (max-width: 899px) {
   .skills-grid { grid-template-columns: 1fr; gap: 36px; justify-items: start; }
+  .skills { max-height: none; display: block; }
   .skills-foto { order: -1; width: 70%; justify-self: center; }
+  .skills-foto img { width: 100%; height: auto; max-width: none; }
   .skills-soft, .skills-hard { text-align: left; }
   .skills-soft .skills-list, .skills-hard .skills-list { align-items: flex-start; }
   .skills-title { font-size: 30px; margin-bottom: 18px; }
