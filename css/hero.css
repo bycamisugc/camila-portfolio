@@ -5,16 +5,17 @@
    ========================================================= */
 .hero {
   /* a foto ocupa ~85% da altura da tela, sem nunca entrar embaixo do header */
-  --stage-h: min(85vh, calc(100vh - var(--header-h) - 12px));
-  --stage-h: min(85svh, calc(100svh - var(--header-h) - 12px));
+  /* também limitado pela largura (62.5vw): no celular em pé a tela virtual é muito alta */
+  --stage-h: min(85vh, calc(100vh - var(--header-h) - 12px), calc(62.5vw - var(--header-h) - 12px));
+  --stage-h: min(85svh, calc(100svh - var(--header-h) - 12px), calc(62.5vw - var(--header-h) - 12px));
   --photo-ratio: 0.8547;              /* largura / altura da foto recortada (img/hero-camila) */
   --stage-w: calc(var(--stage-h) * var(--photo-ratio));
   --side: calc((100vw - var(--stage-w)) / 2);
   --name-size: clamp(52px, calc((var(--side) - var(--gutter)) / 4), 168px);
 
   position: relative;
-  min-height: 100vh;
-  min-height: 100svh;
+  min-height: min(100vh, 62.5vw);
+  min-height: min(100svh, 62.5vw);
   padding-top: var(--header-h);
   background: var(--bg);
   overflow-x: clip;
