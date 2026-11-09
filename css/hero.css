@@ -8,7 +8,7 @@
   /* também limitado pela largura (62.5vw): no celular em pé a tela virtual é muito alta */
   --stage-h: min(85vh, calc(100vh - var(--header-h) - 12px), calc(62.5vw - var(--header-h) - 12px));
   --stage-h: min(85svh, calc(100svh - var(--header-h) - 12px), calc(62.5vw - var(--header-h) - 12px));
-  --photo-ratio: 0.8547;              /* largura / altura da foto recortada (img/hero-camila) */
+  --photo-ratio: 0.7359;              /* largura / altura da foto recortada (img/hero-camila) */
   --stage-w: calc(var(--stage-h) * var(--photo-ratio));
   --side: calc((100vw - var(--stage-w)) / 2);
   --name-size: clamp(52px, calc((var(--side) - var(--gutter)) / 4), 168px);
@@ -75,9 +75,11 @@
   height: 100%;
   object-fit: contain;
   object-position: center bottom;
-  /* suaviza o corte da foto na base */
-  -webkit-mask-image: linear-gradient(to bottom, #000 80%, transparent 99%);
-          mask-image: linear-gradient(to bottom, #000 80%, transparent 99%);
+  /* suaviza os cortes da foto (base e lado direito, onde as caixas encostam na borda) */
+  -webkit-mask-image: linear-gradient(to bottom, #000 80%, transparent 99%), linear-gradient(to left, transparent 0, #000 8%);
+  -webkit-mask-composite: source-in;
+          mask-image: linear-gradient(to bottom, #000 80%, transparent 99%), linear-gradient(to left, transparent 0, #000 8%);
+          mask-composite: intersect;
   opacity: 0;
   transform: translateY(26px);
   transition: opacity 1s ease, transform 1.2s var(--ease-out);
