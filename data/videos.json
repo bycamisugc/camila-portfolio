@@ -92,6 +92,15 @@
       "tipo": ""
     },
     {
+      "arquivo": "videos/tech-lalamove.mp4",
+      "youtube": "",
+      "capa": "videos/capas/tech-lalamove.jpg",
+      "nicho": "tech",
+      "marca": "Lalamove",
+      "formato": "UGC",
+      "tipo": ""
+    },
+    {
       "arquivo": "videos/limpeza-coala.mp4",
       "youtube": "",
       "capa": "videos/capas/limpeza-coala.jpg",
@@ -124,6 +133,15 @@
       "capa": "videos/capas/limpeza-coperalcool.jpg",
       "nicho": "limpeza",
       "marca": "Coperalcool",
+      "formato": "UGC",
+      "tipo": ""
+    },
+    {
+      "arquivo": "videos/limpeza-vinagreen-2.mp4",
+      "youtube": "",
+      "capa": "videos/capas/limpeza-vinagreen-2.jpg",
+      "nicho": "limpeza",
+      "marca": "Vinagreen",
       "formato": "UGC",
       "tipo": ""
     },
@@ -205,6 +223,15 @@
       "capa": "videos/capas/moda-upper-2.jpg",
       "nicho": "moda",
       "marca": "Upper",
+      "formato": "UGC",
+      "tipo": ""
+    },
+    {
+      "arquivo": "videos/moda-midas-time-3.mp4",
+      "youtube": "",
+      "capa": "videos/capas/moda-midas-time-3.jpg",
+      "nicho": "moda",
+      "marca": "Midas Time",
       "formato": "UGC",
       "tipo": ""
     },

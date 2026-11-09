@@ -180,6 +180,24 @@
       },
       "largura": 810,
       "altura": 1400
+    },
+    {
+      "arquivo": "fotos/foto-21.jpg",
+      "alt": {
+        "pt": "Camila com o lava-roupas Vinagreen",
+        "en": "Camila with Vinagreen laundry detergent"
+      },
+      "largura": 779,
+      "altura": 1400
+    },
+    {
+      "arquivo": "fotos/foto-22.jpg",
+      "alt": {
+        "pt": "Camila mostrando um produto Midas Time",
+        "en": "Camila showing a Midas Time product"
+      },
+      "largura": 804,
+      "altura": 1400
     }
   ]
 }
